@@ -1,0 +1,23 @@
+.header{
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  & nav{
+    width: 10rem;
+    height: 100%;
+    background-color: rgba(245, 245, 220, 0.582);
+  }
+}
+
+.ImgMenu{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  transform: scale(0.8);
+  background-color: transparent;
+  border: none;
+  top: 1rem;
+  left: 1rem;
+  fill:#4FC3F7;
+}
