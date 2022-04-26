@@ -1,30 +1,32 @@
 .header{
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 100vh;
   width: 100%;
-  left:-100%;
+  right:-100%;
   & nav{
-    width: 10rem;
+    position: absolute;
+    right: 0;
+    width: 15rem;
     height: 100%;
-    background-color: rgba(245, 245, 220, 0.582);
+    background-color: #1d2024e3;
   }
   transition: 0.3s all ease-in-out;
 }
 .headerOpen{
-  left: 0;
+  right: 0;
 }
 
 .ImgMenu{
   cursor: pointer;
   margin: 0;
   padding: 0;
-  position: absolute;
+  position: fixed;
   transform: scale(0.8);
   background-color: transparent;
   border: none;
   top: 1rem;
-  left: 1rem;
+  right: 1rem;
   width: 3rem;
   height: 3rem;
   transition: 0.3s all ease-in-out;
