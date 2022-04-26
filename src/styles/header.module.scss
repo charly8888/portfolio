@@ -3,14 +3,20 @@
   top: 0;
   height: 100vh;
   width: 100%;
+  left:-100%;
   & nav{
     width: 10rem;
     height: 100%;
     background-color: rgba(245, 245, 220, 0.582);
   }
+  transition: 0.3s all ease-in-out;
+}
+.headerOpen{
+  left: 0;
 }
 
 .ImgMenu{
+  cursor: pointer;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -19,5 +25,13 @@
   border: none;
   top: 1rem;
   left: 1rem;
-  fill:#4FC3F7;
+  width: 3rem;
+  height: 3rem;
+  transition: 0.3s all ease-in-out;
+  & img{
+    width: 100%;
+  }
+}
+.menuBotonOpen {
+  transform: rotate(45deg) scale(0.9) ;
 }

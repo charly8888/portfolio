@@ -10,8 +10,8 @@ function App() {
         <Card />
         <Card />
       </section>
-      <Logo />
       <Header />
+      <Logo />
     </>
   )
 }
