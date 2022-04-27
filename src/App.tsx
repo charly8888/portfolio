@@ -1,9 +1,15 @@
 import { Card } from './components/Card'
 import { Header } from './components/Header'
 import css from './styles/app.module.scss'
+import { Presentation } from './components/Presentation'
+import { Heading } from './components/elements'
+import { Contact } from './components/Contact';
+
 function App() {
   return (
     <>
+      <Presentation />
+      <Heading />
       <section className={css.containerCards}>
         <Card
           title="Space Tourism"
@@ -30,6 +36,7 @@ function App() {
           siteImage="/images/space-tourism.png"
         />
       </section>
+      <Contact/>
       <Header />
     </>
   )

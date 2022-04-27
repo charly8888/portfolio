@@ -4,14 +4,32 @@
   height: 100vh;
   width: 100%;
   right:-100%;
+  transition: 0.3s all ease-in-out;
   & nav{
     position: absolute;
     right: 0;
     width: 15rem;
     height: 100%;
     background-color: #1d2024e3;
+    padding: 7rem 0 0 0;
+    & li{
+      list-style: none;
+      text-align: center;
+      & a{
+        width: 100%;
+        line-height: 4rem;
+        display: inline-block;
+        text-decoration: none;
+        color: #4FC3F7;
+        font-size: 1.5rem ;
+        text-transform: uppercase;
+        // margin: 1rem 0;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
   }
-  transition: 0.3s all ease-in-out;
 }
 .headerOpen{
   right: 0;

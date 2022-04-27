@@ -10,7 +10,19 @@ export const Header = () => {
         className={`${css.header} ${isOpen ? css.headerOpen : ''}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <nav onClick={(e) => e.stopPropagation()}></nav>
+        <nav onClick={(e) => e.stopPropagation()}>
+          <ul>
+            <li>
+              <a href="#">About me</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <button
         onClick={() => setIsOpen(!isOpen)}

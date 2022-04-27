@@ -1,0 +1,28 @@
+.description{
+  min-width: 21rem;
+  max-width: 25rem;
+  // background-color: rgba(157, 255, 0, 0.193);
+  height: 15rem;
+  margin: 0 1rem;
+  text-align: center;
+  & h1{
+    font-weight: 700;
+    text-transform: uppercase;
+    & span{
+      color:#36c0f0 ;
+    }
+  }
+  & p {
+    display: inline;
+    line-height: 1rem;
+    position: relative;
+    & h1{
+      display: inline;
+      font-size: 2rem;
+      line-height: .1rem;
+      color:#36c0f0 ;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+  }
+}

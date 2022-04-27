@@ -1,0 +1,16 @@
+.containerHeading{
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  
+  & h1{
+    margin: 2rem auto;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    color: transparent;
+    background: linear-gradient(to right,#38c2f3, #b646eb);
+    background-clip: text;
+  }
+}
