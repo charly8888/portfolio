@@ -16,21 +16,7 @@ export const PresentationContainer = () => {
               <img src="/icons/nodejs.svg" alt="" />
             </div>
             <div className={css.containerImg}>
-              <img src="/icons/docker.svg" alt="" />
-            </div>
-          </div>
-          <div className={css.back}>
-            <div className={css.containerImg}>
               <img src="/icons/html.svg" alt="" />
-            </div>
-            <div className={css.containerImg}>
-              <img src="/icons/react.svg" alt="" />
-            </div>
-            <div className={css.containerImg}>
-              <img src="/icons/mongo.svg" alt="" />
-            </div>
-            <div className={css.containerImg}>
-              {/* <img src="/icons/react.svg" alt="" /> */}
             </div>
           </div>
           <div className={css.back}>
@@ -38,10 +24,24 @@ export const PresentationContainer = () => {
               <img src="/icons/css.svg" alt="" />
             </div>
             <div className={css.containerImg}>
+              <img src="/icons/react.svg" alt="" />
+            </div>
+            <div className={css.containerImg}>
+              <img src="/icons/ts.svg" alt=""  />
+            </div>
+            <div className={css.containerImg}>
+              {/* <img src="/icons/react.svg" alt="" /> */}
+            </div>
+          </div>
+          <div className={css.back}>
+            <div className={css.containerImg}>
+              <img src="/icons/docker.svg" alt="" />
+            </div>
+            <div className={css.containerImg}>
               <img src="/icons/git.png" alt="" />
             </div>
             <div className={css.containerImg}>
-              <img src="/icons/ts.svg" alt="" />
+              <img src="/icons/mongo.svg" alt="" />
             </div>
             <div className={css.containerImg}>
               {/* <img src="/icons/git.svg" alt="" /> */}

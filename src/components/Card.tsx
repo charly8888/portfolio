@@ -22,10 +22,10 @@ export const Card: FC<Props> = ({ title, siteURL, github, siteImage }) => {
       </section>
       <footer className={css.footer}>
         <a href={github} target="_blank">
-          <GitHubIcon sx={{ color: blue[400], fontSize: 40 }} />
+          <img src='icons/github.svg' alt='Github' />
         </a>
         <a href={siteURL} target="_blank">
-          <NorthEastRoundedIcon sx={{ color: blue[400], fontSize: 40 }} />
+          <img src='/icons/link.svg' />
         </a>
       </footer>
     </div>
