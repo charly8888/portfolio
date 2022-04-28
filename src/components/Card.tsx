@@ -1,7 +1,4 @@
 import css from '../styles/card.module.scss'
-import GitHubIcon from '@mui/icons-material/GitHub'
-import NorthEastRoundedIcon from '@mui/icons-material/NorthEastRounded'
-import { blue } from '@mui/material/colors'
 import { FC } from 'react'
 
 interface Props {
