@@ -1,7 +1,7 @@
 import css from './form.module.scss'
 
-type F_a = string
-const German:F_a = 4
+// type F_a = string
+// const German:F_a = 4
 
 export const Form = () => {
   return (
