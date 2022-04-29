@@ -5,7 +5,7 @@ import css from './form.module.scss'
 
 export const Form = () => {
   return (
-    <form className={css.formContainer}  data-netlify="true" name="contact" method="POST">
+    <form className={css.formContainer}  data-netlify="true" name="contact" >
       <label>
         <p>Name</p>
         <input type="text" name="name" />
