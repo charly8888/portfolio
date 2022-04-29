@@ -5,7 +5,7 @@ import css from './form.module.scss'
 
 export const Form = () => {
   return (
-    <form action="" className={css.formContainer}>
+    <form action="" className={css.formContainer} data-netlify="true">
       <label>
         <p>Name</p>
         <input type="text" />
@@ -16,9 +16,7 @@ export const Form = () => {
       </label>
       <label>
         <p>Message</p>
-        <textarea
-          name="bio"
-        ></textarea>
+        <textarea name="bio"></textarea>
       </label>
       <button>Send</button>
     </form>
