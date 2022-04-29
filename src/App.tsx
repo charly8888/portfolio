@@ -16,21 +16,21 @@ function App() {
           siteURL="https://space-tourism-site-charly8888.netlify.app"
           github="https://github.com/charly8888/space-tourism-website"
           siteImage="/images/space-tourism.png"
-          description='This is a project of s dla s slkfjñlj añl msdflcuiv k kdsfhio'
+          description='This is a project '
         />
         <Card
-          title="Space Tourism"
+          title="Ecommerce"
           siteURL="https://e-comerce-challenge.netlify.app/"
           github="https://github.com/charly8888/challenge_e-commerce"
           siteImage="/images/ecommerce.png"
-          description='lorem sdf ilasdkfu dkfu añsldk mdifa sdf'
+          description='Este es un challenge que me proporcionó Aerolab y '
         />
         <Card
-          title="Space Tourism"
+          title="Robot Color"
           siteURL="https://robot-color.netlify.app/"
           github="https://github.com/charly8888/robot-colors"
           siteImage="/images/robot.png"
-          description='sfasdfs sdf sdfsd fsdf sdsdf'
+          description='Esta es mi primer página web'
         />
       </section>
       <Contact />
