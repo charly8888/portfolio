@@ -5,20 +5,20 @@ import css from './form.module.scss'
 
 export const Form = () => {
   return (
-    <form action="" className={css.formContainer} data-netlify="true">
+    <form className={css.formContainer} method="POST" data-netlify="true">
       <label>
         <p>Name</p>
-        <input type="text" />
+        <input type="text" name="name" />
       </label>
       <label>
         <p>Email</p>
-        <input type="email" />
+        <input type="email" name="email" />
       </label>
       <label>
         <p>Message</p>
-        <textarea name="bio"></textarea>
+        <textarea name="message"></textarea>
       </label>
-      <button type='submit'>Send</button>
+      <button type="submit">Send</button>
     </form>
   )
 }
