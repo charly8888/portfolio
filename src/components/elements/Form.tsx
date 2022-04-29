@@ -8,9 +8,10 @@ export const Form = () => {
     <form
       className={css.formContainer}
       data-netlify="true"
-      name="contact"
+      name="contact-form"
       method="POST"
     >
+      <input type="hidden" name="form-name" value="contact-form" />
       <label>
         <p>Name</p>
         <input type="text" name="name" />
@@ -23,7 +24,6 @@ export const Form = () => {
         <p>Message</p>
         <textarea name="message"></textarea>
       </label>
-      <input type="hidden" name="contact" value="contact" />
 
       <button type="submit">Send</button>
     </form>
