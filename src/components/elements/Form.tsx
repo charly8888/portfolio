@@ -18,7 +18,7 @@ export const Form = () => {
         <p>Message</p>
         <textarea name="bio"></textarea>
       </label>
-      <button>Send</button>
+      <button type='submit'>Send</button>
     </form>
   )
 }
