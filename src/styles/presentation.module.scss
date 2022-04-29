@@ -9,5 +9,10 @@
   align-items: center;
   overflow: hidden;
 }
-// *** Container de mí
+
+@media (min-width: 768px){
+  .distribucion100vh{
+  flex-direction: row;
+  }
+}
 

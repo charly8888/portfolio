@@ -27,10 +27,12 @@
   width: 90%;
   aspect-ratio: 16/9;
   margin: 4.5rem auto;
-  border-radius: .5rem;
   overflow: hidden;
+  display: flex;
+  align-items: center;
   & img{
     width: 100%;
+    border-radius: .5rem;
   }
 }
 .mark:after{
@@ -53,7 +55,17 @@
   background-color: #8045c6;
   z-index: -1;
 }
-
+.text{
+  color: #bbbbbb;
+  position: absolute;
+  top: 54%;
+  width: 90%;
+  font-size: .9rem;
+  left: 50%;
+  transform: translate(-50%);
+  text-indent: .5rem;
+  line-height: 1.1rem;
+}
 .footer{
   position: absolute;
   bottom: 0;

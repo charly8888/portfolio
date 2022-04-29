@@ -138,3 +138,13 @@
   border-right: .7rem solid transparent;
   transform: rotate(-45deg);
 }
+
+
+
+@media (min-width: 768px){
+  .container{
+    max-width: 35rem;
+    width: 95%;
+    aspect-ratio: 1/1;
+  }
+}
