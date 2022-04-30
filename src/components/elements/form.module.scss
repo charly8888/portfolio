@@ -1,71 +1,49 @@
 .formContainer{
   width: 20rem;
-  height: 20rem;
+  height: auto;
   background-color: #474A59;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding:  2rem;
+  gap: 1.5rem;
+  padding:  1rem;
   box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
   align-items: center;
-  & label{
-    display: flex;
+  & fieldset{
     width: 100%;
-    flex-direction: column;
+    padding: .5rem;
+    border-color:#af43f1 ;
   }
-  & p{
-    color: #B85DF0;
+  & legend{
+    color: #af43f1;
     font-size: 14px;
     font-family: "Roboto";
-    letter-spacing: 1px;
-    height: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    text-transform: uppercase;
   }
-  & input{
+  & input, textarea{
     background: transparent;
+    width: 100%;
     font-size: 1rem;
     outline: none ;
     border: 0;
-    font-size: 20px;
-    height: 30px;
     color: #fff;
-    line-height: 30px;
-    &:hover{
-
-      border-bottom: 2px solid #B85DF0 ;
-      border-top: 2px solid transparent;
-    }
-    &:focus-visible{
-      border-top: 2px solid transparent;
-      border-bottom: 2px solid #B85DF0 ;
-    }
+    resize: none;
+    
   }
-  & textarea{
-    background-color: transparent;
-    outline: none;
-    border: 0;
-    font-size: 1rem;
-    height: 5rem;
-    color: #fff;
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent ;
-    &:focus-visible{
-      border-top: 2px solid transparent;
-      border-bottom: 2px solid #B85DF0 ;
-    }
-    &:hover{
-      border-bottom: 2px solid #B85DF0 ;
-      border-top: 2px solid transparent;
-    }
+  & textarea {
+    height: 6rem;
   }
+  
   & button{
-    background-color: #B85DF0;
+    background-color: #ae43f1;
     border: none;
     padding: 1rem;
-    font-size: 14px;
+    color: #fff;
+    font-size: 1rem;
     font-family: "Roboto";
     letter-spacing: 1px;
+    font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -74,10 +52,6 @@
 @media (min-width: 768px){
   .formContainer{
     width: 25rem;
-    height: 25rem;
-    display: flex;
-    padding:  2.5rem;
-    box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
-    align-items: center;
+    padding:  2rem;
   }
 }

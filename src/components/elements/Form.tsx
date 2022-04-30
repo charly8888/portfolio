@@ -12,18 +12,21 @@ export const Form = () => {
       method="POST"
     >
       <input type="hidden" name="form-name" value="contact-form" />
-      <label>
-        <p>Name</p>
+
+      <fieldset>
+        <legend>NAME</legend>
         <input type="text" name="name" />
-      </label>
-      <label>
-        <p>Email</p>
+      </fieldset>
+
+      <fieldset>
+        <legend> EMAIL </legend>
         <input type="email" name="email" />
-      </label>
-      <label>
-        <p>Message</p>
+      </fieldset>
+
+      <fieldset>
+        <legend> MESSAGE </legend>
         <textarea name="message"></textarea>
-      </label>
+      </fieldset>
 
       <button type="submit">Send</button>
     </form>

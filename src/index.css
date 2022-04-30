@@ -7,10 +7,10 @@
 }
 body {
   font-family: 'PT Sans', sans-serif;
-  background-color: #1E2227;
+  background-image: url(/images/background.png);
+  background-repeat: repeat;
+  /* background-color: #1E2227; */
   max-width: 100%;
   min-height: 100vh;
   color: #fff;
-  transition-duration: .2s all ;
-  transition-timing-function: ease-in-out;
 }
