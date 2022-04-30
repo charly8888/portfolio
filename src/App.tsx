@@ -1,7 +1,7 @@
 import { Card } from './components/Card'
-import { Header } from './components/Header'
+import { Header } from './components/1.Navbar/Header'
 import css from './styles/app.module.scss'
-import { Presentation } from './components/Presentation'
+import { Presentation } from './components/2.Presentation/Presentation'
 import { Heading } from './components/elements'
 import { Contact } from './components/Contact'
 
