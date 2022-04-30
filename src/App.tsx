@@ -16,14 +16,14 @@ function App() {
           siteURL="https://space-tourism-site-charly8888.netlify.app"
           github="https://github.com/charly8888/space-tourism-website"
           siteImage="/images/space-tourism.png"
-          description=""
+          description="A site about planets, astronauts and tecnology"
         />
         <Card
           title="Ecommerce"
           siteURL="https://e-comerce-challenge.netlify.app/"
           github="https://github.com/charly8888/challenge_e-commerce"
           siteImage="/images/ecommerce.png"
-          description="Este es un challenge que me proporcionó Aerolab y "
+          description="E-commerce that provide an user and points for claim products"
         />
         <Card
           title="Robot Color"
