@@ -7,7 +7,9 @@ export const Header = () => {
     if (document.documentElement.scrollTop > 0) {
       document.getElementById('header')?.classList.add(`${css.onScroll}`)
       document.getElementById('logo')?.classList.add(`${css.onScrollLogo}`)
-      document.getElementById('logo')?.classList.remove(`${css.onScrollLogoFin}`)
+      document
+        .getElementById('logo')
+        ?.classList.remove(`${css.onScrollLogoFin}`)
     } else {
       document.getElementById('header')?.classList.remove(`${css.onScroll}`)
       document.getElementById('logo')?.classList.remove(`${css.onScrollLogo}`)
@@ -43,7 +45,7 @@ export const Header = () => {
       </button>
       <header className={`${css.header768} `} id="header">
         <div className={css.containerIcoAndLogo}>
-          <img src="/favicon.png" id="logo"/>
+          <img src="/favicon.png" id="logo" />
           <section>
             <h1>German.dev</h1>
           </section>
@@ -61,6 +63,11 @@ export const Header = () => {
             </li>
           </ul>
         </nav>
+        <div className={css.containerBottomCV}>
+          <a href="#" download>
+            Download CV
+          </a>
+        </div>
       </header>
     </>
   )
