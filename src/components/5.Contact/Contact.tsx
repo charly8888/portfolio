@@ -1,6 +1,6 @@
-import css from '../styles/contatc.module.scss'
-import { Form } from './elements/Form'
-import { GetInTouch } from './elements/GetInTouch'
+import css from './contatc.module.scss'
+import { Form } from './components/Form'
+import { GetInTouch } from './components/GetInTouch'
 export const Contact = () => {
   return (
     <footer className={css.containerFooter} id="contact">

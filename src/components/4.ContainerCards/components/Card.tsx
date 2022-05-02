@@ -1,4 +1,4 @@
-import css from '../styles/card.module.scss'
+import css from './card.module.scss'
 import { FC } from 'react'
 
 interface Props {

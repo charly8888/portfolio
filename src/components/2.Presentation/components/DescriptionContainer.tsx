@@ -27,7 +27,7 @@ export const DescriptionContainer = () => {
         <br />
         <p>
           <h1> " </h1>
-          Hi, I am Junior Software Developer. I love solving problems and
+          Hi, I am Trainee Software Developer. I love solving problems and
           creating software, I also love to keep adding new knowledge to my
           repertoire and improve my profile as a professional. My main focus is
           full-stack development.

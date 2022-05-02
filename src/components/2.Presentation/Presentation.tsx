@@ -1,5 +1,5 @@
-import css from '../../styles/presentation.module.scss'
-import { DescriptionContainer, PresentationContainer } from '../elements'
+import css from './presentation.module.scss'
+import { DescriptionContainer, PresentationContainer } from './components'
 export const Presentation = () => {
   return (
     <div className={css.distribucion100vh}>

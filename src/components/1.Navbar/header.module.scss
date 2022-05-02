@@ -13,7 +13,7 @@
     right: 0;
     width: 15rem;
     height: 100%;
-    background-color: #1d2024e3;
+    background-color: #1d2024;
     padding: 7rem 0 0 0;
     & li{
       list-style: none;
@@ -43,14 +43,12 @@
   margin: 0;
   padding: 0;
   position: fixed;
-  transform: scale(0.8);
   background-color: transparent;
   border: none;
   top: 1rem;
   right: 1rem;
-  width: 3rem;
-  height: 3rem;
-  transition: 0.3s all ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
   & img{
     width: 100%;
   }
