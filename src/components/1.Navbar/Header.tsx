@@ -25,9 +25,7 @@ export const Header = () => {
       >
         <nav onClick={(e) => e.stopPropagation()}>
           <ul>
-            <li>
-              <a href="#">About me</a>
-            </li>
+            
             <li>
               <a href="#skills">Skills</a>
             </li>
@@ -65,16 +63,15 @@ export const Header = () => {
       {/* mayor a 768px */}
       <header className={`${css.header768} `} id="header">
         <div className={css.containerIcoAndLogo}>
-          <img src="/favicon.png" id="logo" />
-          <section>
-            <h1>German.dev</h1>
-          </section>
+          <a href="#">
+            <img src="/favicon.png" id="logo" />
+          </a>
+            <section>
+              <h1>German.dev</h1>
+            </section>
         </div>
         <nav onClick={(e) => e.stopPropagation()}>
           <ul>
-            <li>
-              <a href="#">About me</a>
-            </li>
             <li>
               <a href="#skills">Skills</a>
             </li>

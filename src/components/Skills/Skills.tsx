@@ -26,20 +26,22 @@ export const Skills: FC = () => {
         >
           Backend
         </button>
-        <button
+        {/* <button
           onClick={() => setSkill(dataSkills[2])}
           className={`${skill === dataSkills[2] ? css.buttonActive : false} ${
             css.button
           }`}
         >
           Methodologies
-        </button>
+        </button> */}
       </nav>
       <div className={css.content}>
         <p>{description}</p>
-        {skill.img.map((url) => (
-          <img src={url} className={css.imgIcon}/>
-        ))}
+        <div className={css.containerImg}>
+          {skill.img.map((url) => (
+            <img src={url} className={css.imgIcon} />
+          ))}
+        </div>
       </div>
     </section>
   )

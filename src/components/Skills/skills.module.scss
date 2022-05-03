@@ -1,15 +1,16 @@
 .containerSkills{
-  max-width: 50rem;
+  max-width: 52rem;
   height: auto;
   margin: 0 auto;
-
+  
 }
 .selectors{
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 1rem;
-  
+  width: 90%;
+  margin: 0 auto;
 }
 .button{
   color: #fff;
@@ -21,28 +22,50 @@
   font-weight: 500;
   border-radius: .5rem .5rem 0 0 ;
   text-transform: uppercase;
-  border: 2px solid #b646eb ;
-  border-bottom: 2px solid transparent;
+  border: 2px solid var(--secondary-color) ;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: -0.1%;
+    background-color: inherit;
+  }
 }
 .content{
-  border: 2px solid #37c1f2;
-  height: 10rem;
+  border: 2px solid var(--primary-color);
+  min-height: 12rem;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
   background-color: #23272e;
-  padding: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  & p{
+    color: #c2c2c2;
+    margin-bottom: 1rem;
+  }
 }
 .buttonActive{
-  border: 2px solid #37c1f2 ; 
+  border: 2px solid var(--primary-color); 
   &::after{
     content: "";
     position: absolute;
     width: 100%;
     height: 4px;
     bottom: -4px;
-    left: 0;
+    left: -0.1%;
     background-color: inherit;
   }
 }
+.containerImg{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .imgIcon{
-  width: 2rem;
-  margin: .5rem;
+  width: 3rem;
 }
