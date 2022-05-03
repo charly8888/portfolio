@@ -1,0 +1,43 @@
+.containerSkills{
+  max-width: 50rem;
+  height: auto;
+  margin: 0 auto;
+
+}
+.selectors{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  
+}
+.button{
+  color: #fff;
+  cursor: pointer;
+  width: 9rem;
+  position: relative;
+  background-color: #23272e;
+  height: 2rem;
+  font-weight: 500;
+  border-radius: .5rem .5rem 0 0 ;
+  text-transform: uppercase;
+  border: 2px solid #b646eb ;
+  border-bottom: 2px solid transparent;
+}
+.content{
+  border: 2px solid #37c1f2;
+  height: 10rem;
+  background-color: #23272e;
+}
+.buttonActive{
+  border: 2px solid #37c1f2 ; 
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -4px;
+    left: 0;
+    background-color: inherit;
+  }
+}
