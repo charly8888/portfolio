@@ -2,9 +2,9 @@
 
 ## Inspiration for the logo
 
-<img src="/public/logoGradiant.png" alt="logoGradiant" width="200"/> +
-<img src="/public/logoGris.png" alt="logoGris" width="200"/> =
-<img src="/public/logo.png" alt="logo" width="200"/>
+<img src="/public/logoGradiant.png" alt="logoGradiant" width="100"/> +
+<img src="/public/logoGris.png" alt="logoGris" width="100"/> =
+<img src="/public/logo.png" alt="logo" width="100"/>
 [Codepen]
 
 ## Inspiration for the page
