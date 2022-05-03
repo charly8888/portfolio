@@ -1,15 +1,5 @@
 # Welcome, this is my portfolio web
 
-## Installation
-
-Install the dependencies and devDependencies and start the server.
-
-```sh
-cd portfolio
-npm install
-npm run dev
-```
-
 ## Inspiration for the logo
 
 <img src="/public/logoGradiant.png" alt="logoGradiant" width="200"/> +
