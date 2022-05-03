@@ -1,6 +1,22 @@
 .header768{
   display: none;
 }
+.containerBottomCV{
+  text-align: center;
+  margin-top: 2rem;
+  & a {
+    background-color: #ec4067;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #fff;
+    &:hover{
+      background-color: #a01a7d;
+    }
+  }
+}
 .header{
   position: fixed;
   top: 0;
@@ -111,25 +127,12 @@
     }
   }
   .containerBottomCV{
-    // background-color: red;
+    margin: 0;
     display: flex ;
     align-items:center ;
     position: absolute;
     right: 3rem;
-    height: 100%;
-    & a {
-      background-color: #ec4067;
-      padding: .5rem 1rem;
-      text-transform: uppercase;
-      font-weight: 500;
-      // border-radius: 1rem;
-      font-family: 'Roboto';
-      text-decoration: none;
-      color: #fff;
-      &:hover{
-        background-color: #a01a7d;
-      }
-    }
+    height: 100%;  
   }
   .onScroll{
     background-color: #fff;

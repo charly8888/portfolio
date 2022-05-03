@@ -25,7 +25,6 @@ export const Header = () => {
       >
         <nav onClick={(e) => e.stopPropagation()}>
           <ul>
-            
             <li>
               <a href="#skills">Skills</a>
             </li>
@@ -36,6 +35,11 @@ export const Header = () => {
               <a href="#contact">Contact</a>
             </li>
           </ul>
+            <div className={css.containerBottomCV}>
+              <a href="/cvenglish.pdf" target="_blank">
+                Download CV
+              </a>
+            </div>
         </nav>
       </header>
       <button onClick={() => setIsOpen(!isOpen)} className={css.ImgMenu}>
@@ -66,9 +70,9 @@ export const Header = () => {
           <a href="#">
             <img src="/favicon.png" id="logo" />
           </a>
-            <section>
-              <h1>German.dev</h1>
-            </section>
+          <section>
+            <h1>German.dev</h1>
+          </section>
         </div>
         <nav onClick={(e) => e.stopPropagation()}>
           <ul>
@@ -84,7 +88,7 @@ export const Header = () => {
           </ul>
         </nav>
         <div className={css.containerBottomCV}>
-          <a href="#" download>
+          <a href="/cvenglish.pdf" target="_blank">
             Download CV
           </a>
         </div>
