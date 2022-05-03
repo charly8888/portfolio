@@ -1,7 +1,8 @@
 import css from './skills.module.scss'
-import { useState } from 'react'
+import { FC, useState } from 'react'
 import { dataSkills } from './data'
-export const Skills = () => {
+
+export const Skills: FC = () => {
   const [skill, setSkill] = useState(dataSkills[0])
 
   const { description } = skill
@@ -34,9 +35,12 @@ export const Skills = () => {
           Methodologies
         </button>
       </nav>
-      <main className={css.content}>
+      <div className={css.content}>
         <p>{description}</p>
-      </main>
+        {skill.img.map((url) => (
+          <img src={url} className={css.imgIcon}/>
+        ))}
+      </div>
     </section>
   )
 }
