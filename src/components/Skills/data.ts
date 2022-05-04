@@ -18,7 +18,7 @@ export const dataSkills: skills = [
   },
   {
     description:
-      'I have done some project with the MERN stack. In the future I would like to delve deeper into these technologies',
+      'I have done some project with the MERN stack. In the future I would like to delve deeper into these technologies.',
     img: ['/icons/nodejs.svg', '/icons/mongo.svg'],
   },
   // {
