@@ -8,22 +8,22 @@ display: none;
   height: 15rem;
   margin: 0 1rem;
   text-align: center;
-  & h1{
+   h1{
     font-weight: 700;
     text-transform: uppercase;
-    & span{
+     span{
       color:#36c0f0 ;
 
     position: relative;
     bottom: .15rem;
     }
   }
-  & p {
+   p {
     display: inline;
     line-height: 1rem;
     position: relative;
     color: #c2c2c2;
-    & h1{
+     h1{
       display: inline;
       font-size: 2rem;
       line-height: .1rem;
@@ -45,21 +45,21 @@ display: none;
     display: block;
     max-width: 40rem;
     height: auto;
-    & h1{
+     h1{
       font-weight: 700;
       text-transform: uppercase;
       font-size: 2.8rem;
-      & span{
+       span{
         color:#36c0f0 ;
       }
     }
-    & p {
+     p {
       display: inline;
       line-height: 1rem;
       position: relative;
       font-size: 1.2rem;
       color: #c2c2c2;
-      & h1{
+       h1{
         display: inline;
         line-height: .1rem;
         color:#36c1f0b7 ;
