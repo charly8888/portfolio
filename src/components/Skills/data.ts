@@ -7,7 +7,7 @@ interface skill {
 export const dataSkills: skills = [
   {
     description:
-      'Me atrae porque es el área que tiene relación directa con el cliente. Considero importante dominar HTML, CSS y JAVASCRIPT nativos. En cuanto a frameworks, me estoy especializando en REACT. También trabajo con librerias como Sass.',
+      'It attracts me because it is the area that has a direct relationship with the client. I consider it important to master native HTML, CSS and JAVASCRIPT. Regarding frameworks, I am specializing in REACT. I also work with libraries like Sass.',
     img: [
       '/icons/html.svg',
       '/icons/css.svg',
@@ -18,7 +18,7 @@ export const dataSkills: skills = [
   },
   {
     description:
-      'He realizado algún proyecto con el stack MERN. En el futuro me gustaría profundizar más en estas tecnologías',
+      'I have done some project with the MERN stack. In the future I would like to delve deeper into these technologies',
     img: ['/icons/nodejs.svg', '/icons/mongo.svg'],
   },
   // {
