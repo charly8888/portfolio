@@ -1,10 +1,9 @@
-.containerSkills{
-  max-width: 52rem;
+.containerSkills {
+  max-width: 40rem;
   height: auto;
   margin: 0 auto;
-  
 }
-.selectors{
+.selectors {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -12,7 +11,7 @@
   width: 90%;
   margin: 0 auto;
 }
-.button{
+.button {
   color: #fff;
   cursor: pointer;
   width: 9rem;
@@ -20,53 +19,36 @@
   background-color: #23272e;
   height: 2rem;
   font-weight: 500;
-  border-radius: .5rem .5rem 0 0 ;
+  border-radius: 1rem ;
   text-transform: uppercase;
-  border: 2px solid var(--secondary-color) ;
-  &::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -2px;
-    left: -0.1%;
-    background-color: inherit;
-  }
+  border: none;
 }
-.content{
-  border: 2px solid var(--primary-color);
+.content {
   min-height: 12rem;
   width: 90%;
-  margin: 0 auto;
+  margin: 1rem auto 0;
   height: auto;
   background-color: #23272e;
   padding: 1.5rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-   p{
+  p {
     color: #c2c2c2;
     margin-bottom: 1rem;
   }
 }
-.buttonActive{
-  border: 2px solid var(--primary-color); 
-  &::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    bottom: -4px;
-    left: -0.1%;
-    background-color: inherit;
-  }
+.buttonActive {
+  background-color: var(--secondary-color);
+ 
 }
-.containerImg{
+.containerImg {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .8rem;
+  gap: 0.8rem;
 }
-.imgIcon{
+.imgIcon {
   width: 2.5rem;
 }
