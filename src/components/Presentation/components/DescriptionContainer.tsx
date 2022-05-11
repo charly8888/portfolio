@@ -11,12 +11,12 @@ export const DescriptionContainer = () => {
         <h1>Web Developer</h1>
         <br />
         <p>
-          <h1> " </h1>
+          <span> " </span>
           Hi, I am Trainee Software Developer. I love solving problems and
           creating software, I also love to keep adding new knowledge to my
           repertoire and improve my profile as a professional. My main focus is
           full-stack development.
-          <h1> "</h1>
+          <span> "</span>
         </p>
       </section>
       <section className={css.description768}>
@@ -26,12 +26,12 @@ export const DescriptionContainer = () => {
         </h1>
         <br />
         <p>
-          <h1> " </h1>
+          <span> " </span>
           Hi, I am Trainee Software Developer. I love solving problems and
           creating software, I also love to keep adding new knowledge to my
           repertoire and improve my profile as a professional. My main focus is
           full-stack development.
-          <h1> "</h1>
+          <span> "</span>
         </p>
       </section>
     </>

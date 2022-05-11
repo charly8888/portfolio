@@ -48,6 +48,12 @@
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
+  a:hover{
+    cursor: pointer;
+    &:hover{
+     transform: scale(1.1); 
+    }
+  }
 }
 .imgIcon {
   width: 2.5rem;

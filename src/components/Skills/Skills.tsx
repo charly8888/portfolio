@@ -1,6 +1,6 @@
-import css from './skills.module.scss'
 import { FC, useState } from 'react'
 import { dataSkills } from './data'
+import css from './skills.module.scss'
 
 export const Skills: FC = () => {
   const [skill, setSkill] = useState(dataSkills[0])
@@ -39,7 +39,14 @@ export const Skills: FC = () => {
         <p>{description}</p>
         <div className={css.containerImg}>
           {skill.img.map((url) => (
-            <img src={url} className={css.imgIcon} />
+            <a href={url[1]} target="_blank" rel="noreferrer" key={url[2]}>
+              <img
+                src={url[0]}
+                className={css.imgIcon}
+                title={url[2]}
+                alt={url[2]}
+              />
+            </a>
           ))}
         </div>
       </div>

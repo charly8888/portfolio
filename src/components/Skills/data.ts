@@ -2,28 +2,38 @@ type skills = Array<skill>
 
 interface skill {
   description: string
-  img: Array<string>
+  img: Array<Array<string>>
 }
 export const dataSkills: skills = [
   {
     description:
       'It attracts me because it is the area that has a direct relationship with the client. I consider it important to master native HTML, CSS and JAVASCRIPT. Regarding frameworks, I am specializing in REACT. I also work with libraries like Sass.',
     img: [
-      '/icons/html.svg',
-      '/icons/css.svg',
-      '/icons/js.svg',
-      '/icons/react.svg',
-      '/icons/sass.svg',
+      [
+        '/icons/html.svg',
+        'https://developer.mozilla.org/en-US/docs/Web/HTML',
+        'HTML5',
+      ],
+      [
+        '/icons/css.svg',
+        'https://developer.mozilla.org/en-US/docs/Web/CSS',
+        'CSS3',
+      ],
+      [
+        '/icons/js.svg',
+        'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+        'JavaScript',
+      ],
+      ['/icons/react.svg', 'https://es.reactjs.org', 'ReactJS'],
+      ['/icons/sass.svg', 'https://sass-lang.com/', 'SASS'],
     ],
   },
   {
     description:
       'I have done some project with the MERN stack. In the future I would like to delve deeper into these technologies.',
-    img: ['/icons/nodejs.svg', '/icons/mongo.svg'],
+    img: [
+      ['/icons/nodejs.svg', 'https://nodejs.org', 'NodeJS'],
+      ['/icons/mongo.svg', 'https://www.mongodb.com', 'MongoDB'],
+    ],
   },
-  // {
-  //   description:
-  //     'He leído mucho sobre metodologías ágiles y dada mi experiencia en el deporte son formas de organizar equipos que me resultan familiares. SCRUM, por ejemplo, es una metodología que viene del rugby.',
-  //   img: ['/icons/scrum.svg'],
-  // },
 ]
