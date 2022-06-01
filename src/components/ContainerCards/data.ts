@@ -9,6 +9,14 @@ type data = project[]
 
 export const projectsData: data = [
   {
+    title: 'Interview steps',
+    siteURL: 'https://cognizant-challenge.netlify.app/',
+    github: 'https://github.com/charly8888/cognizant-challenge',
+    siteImage: '/images/challenge-cognizant.png',
+    description:
+      'A website to manage our candidates based on what step they are in.',
+  },
+  {
     title: 'Space Tourism',
     siteURL: 'https://space-tourism-site-charly8888.netlify.app',
     github: 'https://github.com/charly8888/space-tourism-website',
@@ -30,13 +38,5 @@ export const projectsData: data = [
     siteImage: '/images/robot.png',
     description:
       'This is my first project, I work in animations and interactions with the DOM',
-  },
-  {
-    title: 'Interview steps',
-    siteURL: 'https://cognizant-challenge.netlify.app/',
-    github: 'https://github.com/charly8888/cognizant-challenge',
-    siteImage: '/images/challenge-cognizant.png',
-    description:
-      'A website to manage our candidates based on what step they are in.',
   },
 ]
