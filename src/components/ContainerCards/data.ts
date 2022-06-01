@@ -31,4 +31,12 @@ export const projectsData: data = [
     description:
       'This is my first project, I work in animations and interactions with the DOM',
   },
+  {
+    title: 'Interview steps',
+    siteURL: 'https://cognizant-challenge.netlify.app/',
+    github: 'https://github.com/charly8888/cognizant-challenge',
+    siteImage: '/images/challenge-cognizant.png',
+    description:
+      'A website to manage our candidates based on what step they are in.',
+  },
 ]
