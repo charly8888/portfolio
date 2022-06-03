@@ -1,3 +1,6 @@
+import Github from '../../icons/Github'
+import Linkedin from '../../icons/Linkedin'
+import Twitter from '../../icons/Twitter'
 import css from './getintouch.module.scss'
 
 export const GetInTouch = () => {
@@ -9,15 +12,24 @@ export const GetInTouch = () => {
           <a
             href="https://www.linkedin.com/in/german-hornus-438003226/"
             target="_blank"
+            title="Linkedin"
           >
-            <img src="/icons/linkedin.svg" alt="Linkedin" title="Linkedin" />
+            <Linkedin className={css.iconSvg} />
           </a>
-          <a href="https://github.com/charly8888" target="_blank">
-            <img src="/icons/github.svg" alt="Github" title="Github" />
+          <a
+            href="https://github.com/charly8888"
+            target="_blank"
+            title="Github"
+          >
+            <Github className={css.iconSvg} />
           </a>
         </article>
-        <a href="https://twitter.com/SPGerman003" target="_blank">
-          <img src="/icons/twitter.svg" alt="Twiter" title="Twiter" />
+        <a
+          href="https://twitter.com/SPGerman003"
+          target="_blank"
+          title="Twiter"
+        >
+          <Twitter className={css.iconSvg} />
         </a>
       </section>
       <section className={css.container768}>
@@ -26,14 +38,23 @@ export const GetInTouch = () => {
           <a
             href="https://www.linkedin.com/in/german-hornus-438003226/"
             target="_blank"
+            title="Linkedin"
           >
-            <img src="/icons/linkedin.svg" alt="Linkedin" title="Linkedin" />
+            <Linkedin className={css.iconSvg} />
           </a>
-          <a href="https://github.com/charly8888" target="_blank">
-            <img src="/icons/github.svg" alt="Github" title="Github" />
+          <a
+            href="https://github.com/charly8888"
+            target="_blank"
+            title="Github"
+          >
+            <Github className={css.iconSvg} />
           </a>
-          <a href="https://twitter.com/SPGerman003" target="_blank">
-            <img src="/icons/twitter.svg" alt="Twiter" title="Twiter" />
+          <a
+            href="https://twitter.com/SPGerman003"
+            target="_blank"
+            title="Twiter"
+          >
+            <Twitter className={css.iconSvg} />
           </a>
         </article>
       </section>

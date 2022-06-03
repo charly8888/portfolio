@@ -1,5 +1,7 @@
-import css from './card.module.scss'
 import { FC } from 'react'
+import Github from '../../icons/Github'
+import Link from '../../icons/Link'
+import css from './card.module.scss'
 
 interface Props {
   title: string
@@ -28,11 +30,11 @@ export const Card: FC<Props> = ({
       <p className={css.text}>{description}</p>
 
       <footer className={css.footer}>
-        <a href={github} target="_blank">
-          <img src="icons/github.svg" alt="Github" />
+        <a href={github} target="_blank" title="View code">
+          <Github className={css.iconSvg} />
         </a>
-        <a href={siteURL} target="_blank">
-          <img src="/icons/link.svg" />
+        <a href={siteURL} target="_blank" title="Open site">
+          <Link className={css.iconSvg} />
         </a>
       </footer>
     </div>

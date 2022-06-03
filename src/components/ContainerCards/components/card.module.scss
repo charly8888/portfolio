@@ -1,12 +1,12 @@
 
 .card{
   width: 18rem;
-  height: 26rem;
+  height: 24rem;
   position: relative;
   background-color: #23272E;
   border-radius: 1.5rem ;
   box-shadow: 10px 10px 20px rgba(0,0,0,.15);
-  margin: 1rem;
+  margin: 0 1rem;
 }
 
 .mark{
@@ -66,8 +66,8 @@
   justify-content: space-evenly;
   height: 5rem;
   align-items: center;
-   img{
+  .iconSvg{
     width: 2rem;
-    
+    height: 2rem;
   }
 }
