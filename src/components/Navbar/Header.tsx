@@ -1,5 +1,5 @@
-import css from './header.module.scss'
 import { useState } from 'react'
+import css from './header.module.scss'
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -34,12 +34,12 @@ export const Header = () => {
             <li>
               <a href="#contact">Contact</a>
             </li>
-          </ul>
-            <div className={css.containerBottomCV}>
+            <li>
               <a href="/cvenglish.pdf" target="_blank">
                 Download CV
               </a>
-            </div>
+            </li>
+          </ul>
         </nav>
       </header>
       <button onClick={() => setIsOpen(!isOpen)} className={css.ImgMenu}>
@@ -74,7 +74,7 @@ export const Header = () => {
             <h1>German.dev</h1>
           </section>
         </div>
-        <nav onClick={(e) => e.stopPropagation()}>
+        <nav className={css.nav}>
           <ul>
             <li>
               <a href="#skills">Skills</a>
@@ -85,13 +85,13 @@ export const Header = () => {
             <li>
               <a href="#contact">Contact</a>
             </li>
+            <li>
+              <a href="/cvenglish.pdf" target="_blank">
+                Download CV
+              </a>
+            </li>
           </ul>
         </nav>
-        <div className={css.containerBottomCV}>
-          <a href="/cvenglish.pdf" target="_blank">
-            Download CV
-          </a>
-        </div>
       </header>
     </>
   )

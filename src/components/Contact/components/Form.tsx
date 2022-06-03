@@ -1,34 +1,38 @@
 import css from './form.module.scss'
 
-// type F_a = string
-// const German:F_a = 4
-
 export const Form = () => {
   return (
-    <form
-      className={css.formContainer}
-      data-netlify="true"
-      name="contact-form"
-      method="POST"
-    >
-      <input type="hidden" name="form-name" value="contact-form" />
-
-      <fieldset>
-        <legend>NAME</legend>
-        <input type="text" name="name" />
-      </fieldset>
-
-      <fieldset>
-        <legend> EMAIL </legend>
-        <input type="email" name="email" />
-      </fieldset>
-
-      <fieldset>
-        <legend> MESSAGE </legend>
-        <textarea name="message"></textarea>
-      </fieldset>
-
-      <button type="submit">Send</button>
-    </form>
+    <>
+      <div className={css.login_box}>
+        <form
+          className={css.formContainer}
+          data-netlify="true"
+          name="contact-form"
+          method="POST"
+        >
+          <div className={css.user_box}>
+            <input type="text" name="name" required={true} />
+            <label>Name</label>
+          </div>
+          <div className={css.user_box}>
+            <input type="text" name="email" required={true} />
+            <label>Email</label>
+          </div>
+          <div className={css.user_box}>
+            <textarea name="message" required={true} />
+            <label>Message</label>
+          </div>
+          <button type="submit">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Send
+          </button>
+        </form>
+      </div>
+    </>
   )
 }
+
+

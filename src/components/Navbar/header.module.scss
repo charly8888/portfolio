@@ -1,23 +1,6 @@
 .header768 {
   display: none;
 }
-.containerBottomCV {
-  text-align: center;
-  margin-top: 2rem;
-  a {
-    background-color: #ec4067;
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: 'Roboto';
-    text-decoration: none;
-    border-radius: 1rem;
-    color: #fff;
-    &:hover {
-      background-color: #a01a7d;
-    }
-  }
-}
 .header {
   position: fixed;
   top: 0;
@@ -85,30 +68,34 @@
     height: 4.5rem;
     top: 0;
     display: flex;
-    justify-content: center;
-    ul {
-      width: 25rem;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    li {
-      list-style: none;
-      text-align: center;
-      a {
-        line-height: 4rem;
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        // margin: 1rem 0;
-        font-weight: 500;
+    align-items: center;
+    justify-content: flex-end;
+    .nav {
+      
+      margin-right: 1rem;
+      ul {
+        // width: 25rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      li {
+        list-style: none;
+        text-align: center;
+        a {
+          line-height: 4rem;
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.3rem;
+          text-transform: uppercase;
+          margin: 1rem;
+          font-weight: 500;
+        }
       }
     }
   }
   .containerIcoAndLogo {
-    // background-color: antiquewhite;
     height: 100%;
     width: 18rem;
     position: absolute;
@@ -126,22 +113,16 @@
       margin: 0 1rem;
     }
   }
-  .containerBottomCV {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    right: 3rem;
-    height: 100%;
-  }
+
   .onScroll {
     background-color: #fff;
     transition: all 0.3s ease-in-out;
-
-    ul {
-      li {
-        a {
-          color: #0093c4;
+    .nav {
+      ul {
+        li {
+          a {
+            color: #0093c4;
+          }
         }
       }
     }

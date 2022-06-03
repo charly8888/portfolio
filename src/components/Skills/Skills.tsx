@@ -8,7 +8,7 @@ export const Skills: FC = () => {
   const { description } = skill
 
   return (
-    <section className={css.containerSkills}>
+    <>
       <nav className={css.selectors}>
         <button
           onClick={() => setSkill(dataSkills[0])}
@@ -50,6 +50,6 @@ export const Skills: FC = () => {
           ))}
         </div>
       </div>
-    </section>
+    </>
   )
 }
