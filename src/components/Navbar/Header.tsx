@@ -35,7 +35,7 @@ export const Header = () => {
               <a href="#contact">Contact</a>
             </li>
             <li>
-              <a href="/cvenglish.pdf" target="_blank">
+              <a href="/CV-German-Hornus.pdf" target="_blank">
                 Download CV
               </a>
             </li>
@@ -45,7 +45,6 @@ export const Header = () => {
       <button onClick={() => setIsOpen(!isOpen)} className={css.ImgMenu}>
         {isOpen ? (
           <svg
-            xmlns="http://www.w3.org/2000/svg"
             height="48"
             width="48"
             fill="#fff"
@@ -54,7 +53,6 @@ export const Header = () => {
           </svg>
         ) : (
           <svg
-            xmlns="http://www.w3.org/2000/svg"
             height="48"
             width="48"
             fill="#fff"
@@ -86,7 +84,7 @@ export const Header = () => {
               <a href="#contact">Contact</a>
             </li>
             <li>
-              <a href="/cvenglish.pdf" target="_blank">
+              <a href="/CV-German-Hornus.pdf" target="_blank">
                 Download CV
               </a>
             </li>

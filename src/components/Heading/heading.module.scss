@@ -6,12 +6,21 @@
   transform: translate(-50%);
 
   h1 {
-    margin: 3rem;
-    font-size: 3rem;
+    margin: 2rem;
+    font-size: 2rem;
     color: transparent;
     font-family: 'Roboto';
     background: linear-gradient(to right, #38c2f3, #b646eb);
     background-clip: text;
     -webkit-background-clip: text;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerHeading {
+    h1 {
+      margin: 5rem;
+      font-size: 3rem;
+    }
   }
 }

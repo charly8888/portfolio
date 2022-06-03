@@ -1,8 +1,10 @@
-.containerCards{
-  width:  100%;
+.containerCards {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+
   justify-content: center;
   max-width: 1440px;
   margin: 0 auto;
+  gap: 1.5rem;
 }

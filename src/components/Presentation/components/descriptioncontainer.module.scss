@@ -23,13 +23,9 @@ display: none;
     line-height: 1rem;
     position: relative;
     color: #c2c2c2;
-     h1{
-      display: inline;
-      font-size: 2rem;
-      line-height: .1rem;
+     span{
       color:#36c1f0b7 ;
       font-size: 1.5rem;
-      text-transform: uppercase;
     }
   }
 }
@@ -60,12 +56,9 @@ display: none;
       font-size: 1.2rem;
       color: #c2c2c2;
        span{
-        display: inline;
-        line-height: .1rem;
         color:#36c1f0b7 ;
         font-size:1.5rem;
         font-weight: 900;
-        text-transform: uppercase;
       }
     }
   }

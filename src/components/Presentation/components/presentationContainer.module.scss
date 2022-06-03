@@ -1,6 +1,5 @@
 .container {
-  max-width: 25rem;
-  width: 95%;
+  width: 25rem;
   aspect-ratio: 1/1;
   // background-color: rgba(0, 255, 255, 0.198);
   position: relative;
@@ -77,8 +76,6 @@
 
 @media (min-width: 768px) {
   .container {
-    max-width: 30rem;
-    width: 95%;
-    aspect-ratio: 1/1;
+    min-width: 30rem;
   }
 }
