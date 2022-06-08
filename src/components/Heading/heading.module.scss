@@ -4,22 +4,30 @@
   position: relative;
   left: 50%;
   transform: translate(-50%);
+  margin: 2rem 0;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 
+  .separator {
+    height: 1px;
+    flex-grow: 1;
+    background-color: #0093c4;
+  }
   h1 {
-    margin: 2rem;
+    margin: 0 1rem;
     font-size: 2rem;
-    color: transparent;
     font-family: 'Roboto';
-    background: linear-gradient(to right, #38c2f3, #b646eb);
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: #0093c4;
   }
 }
 
 @media (min-width: 768px) {
   .containerHeading {
+    margin: 5rem 0;
     h1 {
-      margin: 5rem;
       font-size: 3rem;
     }
   }

@@ -9,7 +9,9 @@ export const Heading: FC<props> = ({ heading, id }) => {
   return (
     <div>
       <div id={id} className={css.containerHeading}>
-        <h1>&#60; {heading} &#47;&#62;</h1>
+        <span className={css.separator}></span>
+        <h1>{heading}</h1>
+        <span className={css.separator}></span>
       </div>
     </div>
   )

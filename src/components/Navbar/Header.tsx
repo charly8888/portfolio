@@ -61,7 +61,7 @@ export const Header = () => {
             <img src="/favicon.png" id="logo" />
           </a>
           <section>
-            <h1>German.dev</h1>
+            {/* <h1>Charly8888</h1> */}
           </section>
         </div>
         <nav className={css.nav}>
