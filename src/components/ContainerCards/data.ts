@@ -14,7 +14,7 @@ export const projectsData: data = [
     github: 'https://github.com/charly8888/image-uploader',
     siteImage: '/images/upload-image.png',
     description:
-      'Upload an image and share it through a link',
+      'Upload an image and share it through a link. (only available 24hs)',
   },
   {
     title: 'Interview steps',
