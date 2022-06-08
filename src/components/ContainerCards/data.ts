@@ -9,6 +9,14 @@ type data = project[]
 
 export const projectsData: data = [
   {
+    title: 'Upload images',
+    siteURL: 'https://upload-images-german-dev.netlify.app/',
+    github: 'https://github.com/charly8888/image-uploader',
+    siteImage: '/images/upload-image.png',
+    description:
+      'Upload an image and share it through a link',
+  },
+  {
     title: 'Interview steps',
     siteURL: 'https://cognizant-challenge.netlify.app/',
     github: 'https://github.com/charly8888/cognizant-challenge',
