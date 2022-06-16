@@ -4,16 +4,18 @@ import { Heading } from './components/Heading/Heading'
 import { ContainerCards } from './components/ContainerCards/ContainerCards'
 import { Contact } from './components/Contact/Contact'
 import { Skills } from './components/Skills/Skills'
+import Laptop from './components/Skills/Frontend/Laptop'
 function App() {
   return (
     <>
-      <Presentation />
+      {/* <Presentation />
       <Heading heading="SKILLS" id="skills" />
       <Skills />
       <Heading heading="PROJECTS" id="projects" />
       <ContainerCards />
       <Contact />
-      <Header />
+      <Header /> */}
+      <Laptop/>
     </>
   )
 }
