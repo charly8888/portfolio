@@ -34,11 +34,11 @@ export const Header = () => {
             <li>
               <a href="#contact">Contact</a>
             </li>
-            <li>
+            {/* <li>
               <a href="/CV-German-Hornus.pdf" target="_blank">
                 Download CV
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </header>
@@ -75,11 +75,11 @@ export const Header = () => {
             <li>
               <a href="#contact">Contact</a>
             </li>
-            <li>
+            {/* <li>
               <a href="/CV-German-Hornus.pdf" target="_blank">
                 Download CV
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </header>
