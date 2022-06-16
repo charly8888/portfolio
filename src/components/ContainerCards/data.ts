@@ -9,6 +9,13 @@ type data = project[]
 
 export const projectsData: data = [
   {
+    title: 'Shortcut App',
+    siteURL: 'https://shortcuts-app-one.vercel.app/',
+    github: 'https://github.com/charly8888/shortcutsApp',
+    siteImage: '/images/shortcutApp.png',
+    description: 'if bookmarks are boring for you, try this app',
+  },
+  {
     title: 'Upload images',
     siteURL: 'https://upload-images-german-dev.netlify.app/',
     github: 'https://github.com/charly8888/image-uploader',
