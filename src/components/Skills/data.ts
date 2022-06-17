@@ -7,7 +7,7 @@ interface skill {
 export const dataSkills: skills = [
   {
     description:
-      'It attracts me because it is the area that has a direct relationship with the client. I consider it important to master native HTML, CSS and JAVASCRIPT. Regarding frameworks, I am specializing in REACT. I also work with libraries like Sass.',
+      'It attracts me because it is the area that has a direct relationship with the client. I consider it important to master native HTML5, CSS3 and JavaScript. Regarding frameworks, I am specializing in REACT. I also work with libraries like Sass.',
     img: [
       [
         '/icons/html.svg',

@@ -8,14 +8,13 @@ import Laptop from './components/Skills/Frontend/Laptop'
 function App() {
   return (
     <>
-      {/* <Presentation />
+      <Presentation />
       <Heading heading="SKILLS" id="skills" />
       <Skills />
       <Heading heading="PROJECTS" id="projects" />
       <ContainerCards />
       <Contact />
-      <Header /> */}
-      <Laptop/>
+      <Header />
     </>
   )
 }
