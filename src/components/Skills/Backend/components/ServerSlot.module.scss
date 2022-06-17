@@ -1,0 +1,64 @@
+.contaier {
+  width: 8em;
+  height: 2em;
+  border-radius: 0.3em;
+  background-color: #1d3d50;
+  display: flex;
+  overflow: hidden;
+}
+.powerSection {
+  width: 60%;
+  height: 100%;
+  // background-color: aqua;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  width: 0.8em;
+  height: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background-color: antiquewhite;
+
+  
+  button {
+    border: none;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    background-color: #28333a;
+  }
+}
+.powerBackLight {
+  width: 90%;
+  height: 0.2em;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  border-radius: 1em;
+  transform: translate(-50%, -50%);
+  background-color: antiquewhite;
+}
+
+.ledsGrid {
+  // background-color: aqua;
+  width: 36%;
+  height: 60%;
+  position: relative;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  span {
+    height: 0.2em;
+    border-radius: 1rem;
+    background-color: #22333d;
+  }
+}

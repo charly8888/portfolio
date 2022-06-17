@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import Server from './Backend/Server'
 import { dataSkills } from './data'
 import Laptop from './Frontend/Laptop'
 import css from './skills.module.scss'
@@ -49,7 +50,7 @@ export const Skills: FC = () => {
           </div>
         </div>
         <div className={css.containerLaptop}>
-          <Laptop />
+          <Server />
         </div>
       </div>
     </>

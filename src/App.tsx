@@ -1,10 +1,9 @@
+import { Contact } from './components/Contact/Contact'
+import { ContainerCards } from './components/ContainerCards/ContainerCards'
+import { Heading } from './components/Heading/Heading'
 import { Header } from './components/Navbar/Header'
 import { Presentation } from './components/Presentation/Presentation'
-import { Heading } from './components/Heading/Heading'
-import { ContainerCards } from './components/ContainerCards/ContainerCards'
-import { Contact } from './components/Contact/Contact'
 import { Skills } from './components/Skills/Skills'
-import Laptop from './components/Skills/Frontend/Laptop'
 function App() {
   return (
     <>
@@ -15,6 +14,7 @@ function App() {
       <ContainerCards />
       <Contact />
       <Header />
+      {/* <Server /> */}
     </>
   )
 }

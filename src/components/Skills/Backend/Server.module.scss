@@ -1,0 +1,38 @@
+.containerBack {
+  width: 20rem;
+  height: 11rem;
+  // background-color: aliceblue;
+  display: flex;
+  font-size: 22px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+.separator {
+  width: 7em;
+  height: 0.3em;
+  background-color: #346f87;
+  position: relative;
+}
+.verticalSeparator {
+  width: 0.3em;
+  height: 0.5em;
+  background-color: #1d3d50;
+}
+.bottomSeparator {
+  width: 2em;
+  height: 0.7em;
+  background-color: #1d3d50;
+  border-radius: 0.15em;
+  z-index: 1;
+}
+.tube {
+  position: absolute;
+  width: 10em;
+  height: 0.5em;
+  background-color: #3d5d6f;
+  bottom: -3.1em;
+  left: -1.5em;
+}
