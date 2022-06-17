@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { getRandomHexadecimalColor } from '../../../helpers/getRandomColors'
 import Play from '../../icons/Play'
 import styles from './Laptop.module.scss'
 const Laptop = () => {
-  const [sourceGif, setSourceGif] = useState('')
+  const [sourceGif, setSourceGif] = useState('images/catplaypiano.gif')
 
-  useEffect(() => {
-    handlerRequest()
-  }, [])
+  // useEffect(() => {
+  //   handlerRequest()
+  // }, [])
 
   async function handlerRequest() {
     try {
@@ -16,7 +16,7 @@ const Laptop = () => {
           import.meta.env.VITE_API_KEY_GIF
         }&tag=cat&rating=g`
       )
-      const {data} = await response.json()
+      const { data } = await response.json()
       setSourceGif(data.images.downsized.url)
     } catch (error) {
       console.log(error)
