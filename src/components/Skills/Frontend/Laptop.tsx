@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { getRandomHexadecimalColor } from '../../../helpers/getRandomColors'
 import Play from '../../icons/Play'
 import styles from './Laptop.module.scss'
 const Laptop = () => {
   const [sourceGif, setSourceGif] = useState('images/catplaypiano.gif')
 
-  // useEffect(() => {
-  //   handlerRequest()
-  // }, [])
+  useEffect(() => {
+    handlerRequest()
+  }, [])
 
   async function handlerRequest() {
     try {
