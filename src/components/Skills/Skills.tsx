@@ -49,7 +49,7 @@ export const Skills: FC = () => {
             ))}
           </div>
         </div>
-        <div className={css.containerLaptop}>
+        <div className={css.containerServer}>
           <Server />
         </div>
       </div>
