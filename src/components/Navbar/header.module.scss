@@ -8,6 +8,7 @@
   width: 100%;
   right: -100%;
   transition: 0.3s all ease-in-out;
+  z-index: 999999999999;
   nav {
     position: absolute;
     right: 0;
@@ -70,6 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 999999999999;
     .nav {
       margin-right: 1rem;
       ul {
