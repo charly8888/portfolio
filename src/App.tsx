@@ -3,7 +3,9 @@ import { ContainerCards } from './components/ContainerCards/ContainerCards'
 import { Heading } from './components/Heading/Heading'
 import { Header } from './components/Navbar/Header'
 import { Presentation } from './components/Presentation/Presentation'
+import Laptop from './components/Skills/Frontend/Laptop'
 import { Skills } from './components/Skills/Skills'
+import Server from './components/Skills/Backend/Server';
 function App() {
   return (
     <>
@@ -15,6 +17,7 @@ function App() {
       <Contact />
       <Header />
       {/* <Server /> */}
+      {/* <Laptop/> */}
     </>
   )
 }

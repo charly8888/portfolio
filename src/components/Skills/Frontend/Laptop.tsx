@@ -1,15 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { getRandomHexadecimalColor } from '../../../helpers/getRandomColors'
 import Play from '../../icons/Play'
 import styles from './Laptop.module.scss'
+import Loader from './Loader'
 const Laptop = () => {
-  const [sourceGif, setSourceGif] = useState('images/catplaypiano.gif')
+  const [sourceGif, setSourceGif] = useState('')
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     handlerRequest()
   }, [])
 
   async function handlerRequest() {
+    setLoading(true)
     try {
       const response = await fetch(
         `https://api.giphy.com/v1/gifs/random?api_key=${
@@ -18,6 +21,7 @@ const Laptop = () => {
       )
       const { data } = await response.json()
       setSourceGif(data.images.downsized.url)
+      setLoading(false)
     } catch (error) {
       console.log(error)
     }
@@ -39,7 +43,7 @@ const Laptop = () => {
 
           {/* VIDEO */}
           <div className={styles.video}>
-            <img src={sourceGif} />
+            {loading ? <Loader /> : <img src={sourceGif} />}
             <button className={styles.button} onClick={handlerRequest}>
               <Play />
             </button>

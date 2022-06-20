@@ -38,25 +38,26 @@
 }
 .containerRightDisk {
   position: absolute;
-  top: 26%;
-  right: -9%;
-  transform: translate(-50%, -50%);
+  bottom: 1.83em;
+  left: 100%;
+  transform: translateX(calc(-50% - 0.16em));
 }
 .containerLeftDisk {
   position: absolute;
-  top: 59%;
-  left: 11%;
-  transform: translate(-50%, -50%) rotate(180deg);
+  top: 1.83em;
+  right: 100%;
+  transform: rotate(180deg) translateX(calc(-50% + -0.16em));
 }
 .pipeRightConexion {
   width: 1.8em;
   height: 0.3em;
   background-color: #3d5d6f;
   position: absolute;
-  top: 70%;
-  left: 77%;
+  top: 50%;
+  right: -1.8em;
   border-radius: 0 1em 1em 0;
-  // z-index: -1;
+  transform: translateY(-50%);
+  // z-index: 11;
   &::after {
     content: '';
     height: 1.84em;
@@ -73,14 +74,15 @@
   height: 0.3em;
   background-color: #3d5d6f;
   position: absolute;
-  top: 12%;
-  left: 11%;
-  // border-radius: 0 1em 1em 0;
+  top: 50%;
+  left: -1.8em;
+  transform: translateY(-50%);
+  border-radius: 1em 0 0 1em;
   // z-index: -1;
   &::after {
     content: '';
-    height: 1.76em;
-    // border-radius: 0 0 1em 1em;
+    height: 1.84em;
+    border-radius: 1em 1em 0 0;
     width: 0.3em;
     background-color: inherit;
     position: absolute;
