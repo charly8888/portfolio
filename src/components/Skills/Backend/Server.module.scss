@@ -4,11 +4,12 @@
   // background-color: aliceblue;
   display: flex;
   font-size: 22px;
-  overflow: hidden;
+  // overflow: hidden;
   justify-content: center;
   align-items: center;
   position: relative;
   flex-direction: column;
+  // margin-top: 5em;
 }
 .separator {
   width: 7em;
@@ -89,4 +90,73 @@
     left: 0;
     top: 0;
   }
+}
+.error404 {
+  width: 6.5em;
+  height: 2.5em;
+  background-color: #e7e5d7;
+  position: absolute;
+  color: #000;
+  text-align: center;
+  transition: 1s all ease-in-out;
+  inset: 0;
+  margin: 0 auto;
+}
+.errorActive {
+  // transition: 2s all ease-in-out;
+  animation-name: transitionError;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+@keyframes transitionError {
+  66% {
+    transform-origin: 0%;
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform-origin: 100%;
+    top: -1em;
+  }
+}
+
+.animationErrorInactive {
+  animation-name: transitionOff;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+@keyframes transitionOff {
+  0% {
+    // transform-origin: 100%;
+    top: -1.2em;
+  }
+  66% {
+    transform-origin: 100%;
+    transform: rotate(15deg);
+  }
+  100% {
+    top: 0.15em;
+    left: 0;
+  }
+}
+.errorBackPage {
+  transform: translate(0.12em, -0.15em);
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgb(194, 192, 192) 0%,
+    rgb(236, 236, 236) 100%
+  );
+}
+
+.errorBackPageInactive {
+  transform: translate(0, 0.15em);
+  background-color: gray;
+}
+
+.code {
+  font-size: 0.3em;
+  text-align: justify;
+  margin: 0.5em;
 }

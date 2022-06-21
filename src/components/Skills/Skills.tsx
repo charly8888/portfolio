@@ -12,6 +12,7 @@ export const Skills: FC = () => {
   return (
     <>
       <div className={css.content}>
+        <h2 className={css.mobileTitle}>Frontend</h2>
         <div className={css.containerLaptop}>
           <Laptop />
         </div>
@@ -52,6 +53,7 @@ export const Skills: FC = () => {
         <div className={css.containerServer}>
           <Server />
         </div>
+        <h2 className={css.mobileTitle}>Backend</h2>
       </div>
     </>
   )

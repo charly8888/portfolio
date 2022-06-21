@@ -9,13 +9,13 @@ import Server from './components/Skills/Backend/Server';
 function App() {
   return (
     <>
-      <Presentation />
-      <Heading heading="SKILLS" id="skills" />
+      {/* <Presentation />
+      <Heading heading="SKILLS" id="skills" /> */}
       <Skills />
-      <Heading heading="PROJECTS" id="projects" />
+      {/* <Heading heading="PROJECTS" id="projects" />
       <ContainerCards />
       <Contact />
-      <Header />
+      <Header /> */}
       {/* <Server /> */}
       {/* <Laptop/> */}
     </>

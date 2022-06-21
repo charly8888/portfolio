@@ -46,8 +46,36 @@
   flex-direction: column;
 }
 .containerLaptop {
-  margin: 0 2rem 0 0 ;
+  margin: 0 2rem 0 0;
 }
-.containerServer{
+.containerServer {
   margin: 0 0 0 2rem;
+}
+.mobileTitle {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+    background: #ae43f179;
+  }
+  .mobileTitle {
+    display: block;
+  }
+  .contentBackend {
+    flex-direction: column-reverse;
+  }
+  .containerServer,
+  .containerLaptop {
+    margin: 0;
+  }
+  .informationSkills {
+    h2 {
+      display: none;
+    }
+    p {
+      text-align: left;
+    }
+  }
 }

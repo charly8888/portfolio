@@ -82,3 +82,21 @@
   box-shadow: 0 0 1px 1px rgba(55, 250, 55, 0.418),
     0 0 1px 2px rgba(55, 250, 55, 0.288), 0 0 1px 3px rgba(55, 250, 55, 0.096);
 }
+
+.powerBackLightColorRed {
+  background: linear-gradient(
+    to right,
+    rgb(228, 103, 103),
+    rgb(250, 55, 55) 10%,
+    rgb(250, 55, 55) 25%,
+    antiquewhite
+  );
+  box-shadow: 0 0 1px 1px rgba(252, 86, 57, 0.267),
+    0 0 2px 3px rgba(250, 78, 55, 0.116);
+}
+
+.circleRed {
+  background-color: rgb(250, 55, 55);
+  box-shadow: 0 0 1px 1px rgba(250, 55, 55, 0.411),
+    0 0 1px 2px rgba(250, 55, 55, 0.288), 0 0 1px 3px rgba(250, 55, 55, 0.096);
+}
