@@ -55,10 +55,10 @@
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .content {
     flex-direction: column;
-    background: #ae43f179;
+    background: #ae43f14c;
   }
   .mobileTitle {
     display: block;
