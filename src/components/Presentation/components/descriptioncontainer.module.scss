@@ -94,15 +94,17 @@
   h1 {
     text-align: center;
     overflow: hidden;
+    // display: inline-block;
   }
   animation: shake 1s ease-in-out;
 }
 .animationSlash {
   transform-origin: 100% 0%;
-  transform: rotate(20deg) translateY(-0px) scaleY(1.1) scaleX(1.1);
+  transform: rotate(20deg) translate(-5px) scaleY(1.1) scaleX(1.1);
   clip-path: none !important;
   border-radius: 0.5rem;
   transition: all 1s;
+  margin: 0 0 0 2rem;
 }
 
 @keyframes shake {
