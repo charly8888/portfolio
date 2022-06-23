@@ -1,18 +1,33 @@
 // *** Contenedor general de 100vh que agrupa a cos contenedores. A mí y la descripción
 
-.distribucion100vh{
+.distribucion100vh {
   display: flex;
+  display: grid;
   height: 100vh;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  // flex-direction: column;
+  // background-color: rgba(240, 248, 255, 0.171);
+  grid-template-columns: 1fr repeat(3, 160px) repeat(10, 10px) repeat(10, 70px) 1fr;
+  grid-template-rows: 1fr repeat(12, 40px) 1fr;
+  grid-template-areas:
+    'empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty empty '
+    'b presentation presentation presentation tit tit tit tit tit tit tit tit tit tit tit tit tit tit tit tit tit  tit tit tit'
+    'b presentation presentation presentation tit tit tit tit tit tit tit tit tit tit tit tit tit tit tit tit tit tit tit tit '
+    'b presentation presentation presentation n n n n n n n n n n n n n n n n n n n n '
+    'b presentation presentation presentation s s s s s s w w w w w w w w w w w w w w'
+    'b presentation presentation presentation d d d d d d d d e e e e e e e e e e e e'
+    'b presentation presentation presentation f f f f f f f f f r r r r r r r r r r r'
+    'b presentation presentation presentation g g g g g g g g g t t t t t t t t t t t'
+    'b presentation presentation presentation h h h h h h h h y y y y y y y y y y y y'
+    'b presentation presentation presentation j j j j j j u u u u u u u u u u u u u u'
+    'b presentation presentation presentation i i i i i i i i i i i i i i i i i i i i'
+    'b presentation presentation presentation i i i i i i i i i i i i i i i i i i i i'
+    'b presentation presentation presentation i i i i i i i i i i i i i i i i i i i i'
+    'emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2 emp2';
 }
 
-@media (min-width: 768px){
-  .distribucion100vh{
-  flex-direction: row;
+@media (min-width: 768px) {
+  .distribucion100vh {
+    flex-direction: row;
   }
 }
-

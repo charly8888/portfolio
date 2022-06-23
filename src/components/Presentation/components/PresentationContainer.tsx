@@ -6,7 +6,7 @@ export const PresentationContainer = () => {
       <div className={css.front}>
         <img src="/images/person.jpg" alt="" />
       </div>
-      <div className={`${css.ring} ${css.ringFront}`}></div>
+      <div className={css.ring}></div>
     </main>
   )
 }
