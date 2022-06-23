@@ -1,8 +1,142 @@
 .title {
   grid-area: tit;
-  text-align: center;
-  align-self: flex-end;
-  font-size: 5rem;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  // overflow: hidden;
+  .genericV {
+    height: 100%;
+    overflow: hidden;
+    width: 40px;
+    position: relative;
+    // background-color: red;
+  }
+  .firstV {
+    &::before {
+      content: '';
+      position: absolute;
+      height: 11px;
+      width: 64px;
+      background-color: #4ec2f6;
+      top: 50%;
+      transform: translateY(-50%);
+      transform: rotate(-45deg);
+      transform-origin: 0% 0%;
+
+      z-index: 3;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      height: 11px;
+      width: 64px;
+      background-color: #4ec2f6;
+      top: 44%;
+      transform: translateY(-50%) rotate(45deg);
+      transform-origin: 0% 100%;
+    }
+  }
+  .secondV {
+    transform: rotate(180deg);
+    &::before {
+      content: '';
+      position: absolute;
+      height: 11px;
+      width: 64px;
+      background-color: #af43f1;
+      top: 50%;
+      transform: translateY(-50%);
+      transform: rotate(-45deg);
+      transform-origin: 0% 0%;
+
+      z-index: 3;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      height: 11px;
+      width: 64px;
+      background-color: #af43f1;
+      top: 44%;
+      transform: translateY(-50%) rotate(45deg);
+      transform-origin: 0% 100%;
+    }
+  }
+  .slash {
+    // position: absolute;
+    height: 92px;
+    position: relative;
+    bottom: -6px;
+    width: 11px;
+    // width: 30px;
+    // border-radius: .5rem;
+    clip-path: polygon(
+      50% 0,
+      50% 0,
+      100% 6%,
+      100% 94%,
+      50% 100%,
+      50% 100%,
+      0 94%,
+      0 6%
+    );
+    background: linear-gradient(
+      #af43f1 15%,
+      #af43f1 15%,
+      #4fc3f7 85%,
+      #4fc3f7 85%
+    );
+    // position: absolute;
+    // right: 0;
+    // transform: translateX(50%);
+  }
+  h1 {
+    text-align: center;
+    overflow: hidden;
+  }
+  animation: shake 1s ease-in-out;
+}
+.animationSlash {
+  transform-origin: 100% 0%;
+  transform: rotate(20deg) translateY(-0px) scaleY(1.1) scaleX(1.1);
+  clip-path: none !important;
+  border-radius: 0.5rem;
+  transition: all 1s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(5deg);
+  }
+  15% {
+    transform: rotate(-5deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  45% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  90% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.openTitle {
+  width: 60%;
+  transition: width 0.5s;
+}
+.closeTitle {
+  width: 0%;
 }
 .lineText {
   align-self: center;

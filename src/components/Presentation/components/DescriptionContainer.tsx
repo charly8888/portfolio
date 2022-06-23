@@ -1,11 +1,37 @@
+import { useEffect, useState } from 'react'
 import css from './descriptioncontainer.module.scss'
 
 export const DescriptionContainer = () => {
+  const [openTitle, setOpenTitle] = useState(false)
+  const [animationSlash, setAnimationSlash] = useState(false)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setOpenTitle(true)
+    }, 1400)
+    const timerSlash = setTimeout(() => {
+      setAnimationSlash(true)
+    }, 3000)
+    return () => {
+      clearTimeout(timer)
+      clearTimeout(timerSlash)
+    }
+  }, [])
+
   return (
     <>
-      <h1 className={css.title}>{`<Web Developer/>`}</h1>
+      <div className={css.title}>
+        <span className={`${css.genericV} ${css.firstV}`}></span>
+        <h1 className={`${openTitle ? css.openTitle : css.closeTitle}`}>
+          Web Developer
+        </h1>
+        <div
+          className={` ${animationSlash && css.animationSlash} ${css.slash}`}
+        ></div>
+        <span className={`${css.genericV} ${css.secondV}`}></span>
+      </div>
       <p className={`${css.w} ${css.lineText}`}>
-        <span> " </span> Hi, I am German Hornus, a Software Programmer from Argentina.
+        <span> " </span> Hi, I am German Hornus, a Software Programmer from
+        Argentina.
       </p>
       <p className={`${css.e} ${css.lineText}`}>
         I love solving problems and creating software,
