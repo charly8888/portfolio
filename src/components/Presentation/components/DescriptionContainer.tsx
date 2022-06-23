@@ -7,10 +7,10 @@ export const DescriptionContainer = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setOpenTitle(true)
-    }, 1400)
+    }, 3000)
     const timerSlash = setTimeout(() => {
       setAnimationSlash(true)
-    }, 3000)
+    }, 4500)
     return () => {
       clearTimeout(timer)
       clearTimeout(timerSlash)
