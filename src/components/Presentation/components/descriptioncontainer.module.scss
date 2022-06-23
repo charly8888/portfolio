@@ -93,10 +93,10 @@
   }
   h1 {
     text-align: center;
-    overflow: hidden;
-    // display: inline-block;
+    // overflow: hidden;
+    display: block;
   }
-  animation: shake 1s ease-in-out;
+  animation: shake 1s linear;
 }
 .animationSlash {
   transform-origin: 100% 0%;
@@ -109,7 +109,7 @@
 
 @keyframes shake {
   0% {
-    transform: rotate(5deg);
+    transform: rotate(0);
   }
   15% {
     transform: rotate(-5deg);
@@ -118,25 +118,26 @@
     transform: rotate(5deg);
   }
   45% {
-    transform: rotate(-10deg);
+    transform: rotate(-5deg);
   }
   60% {
-    transform: rotate(10deg);
+    transform: rotate(5deg);
   }
   75% {
-    transform: rotate(-15deg);
+    transform: rotate(-10deg);
   }
   90% {
-    transform: rotate(15deg);
+    transform: rotate(10deg);
   }
   100% {
-    transform: rotate(0);
+    transform: rotate(-10);
   }
 }
 .openTitle {
   width: 60%;
   transition: width 0.5s;
 }
+
 .closeTitle {
   width: 0%;
 }
@@ -147,9 +148,12 @@
   color: #c2c2c2;
   span {
     color: #36c1f0b7;
-    // font-size: 2rem;
     font-weight: 900;
   }
+}
+.containerTitle {
+  overflow: hidden;
+  height: 100%;
 }
 .w {
   grid-area: w;

@@ -21,9 +21,9 @@ export const DescriptionContainer = () => {
     <>
       <div className={css.title}>
         <span className={`${css.genericV} ${css.firstV}`}></span>
-        <h1 className={`${openTitle ? css.openTitle : css.closeTitle}`}>
-          Web Developer
-        </h1>
+        <div className={`${openTitle ? css.openTitle : css.closeTitle} ${css.containerTitle}`}>
+          <h1>Web Developer</h1>
+        </div>
         <div
           className={` ${animationSlash && css.animationSlash} ${css.slash}`}
         ></div>
