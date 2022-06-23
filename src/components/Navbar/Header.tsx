@@ -58,7 +58,7 @@ export const Header = () => {
       <header className={`${css.header768} `} id="header">
         <div className={css.containerIcoAndLogo}>
           <a href="#">
-            <img src="/favicon.png" id="logo" />
+            <img src="/favicon.ico" id="logo" />
           </a>
           <section>
             {/* <h1>Charly8888</h1> */}
