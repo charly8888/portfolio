@@ -19,6 +19,7 @@ export const DescriptionContainer = () => {
 
   return (
     <>
+      <h1 className={css.titleMobile}>Web Developer</h1>
       <div className={css.title}>
         <span className={`${css.genericV} ${css.firstV}`}></span>
         <div className={`${openTitle ? css.openTitle : css.closeTitle} ${css.containerTitle}`}>
@@ -30,11 +31,10 @@ export const DescriptionContainer = () => {
         <span className={`${css.genericV} ${css.secondV}`}></span>
       </div>
       <p className={`${css.w} ${css.lineText}`}>
-        <span> " </span> Hi, I am German Hornus, a Software Programmer from
-        Argentina.
+        <span> " </span> Hi, I am German Hornus, a Software Programmer from 
       </p>
       <p className={`${css.e} ${css.lineText}`}>
-        I love solving problems and creating software,
+      Argentina. I love solving problems and creating software,
       </p>
       <p className={`${css.r} ${css.lineText}`}>
         I also love to keep adding new knowledge to my repertoire

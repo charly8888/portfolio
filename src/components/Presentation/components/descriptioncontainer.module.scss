@@ -1,6 +1,6 @@
 .title {
   grid-area: tit;
-  font-size: 32px;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -142,14 +142,34 @@
 .closeTitle {
   width: 0%;
 }
+
 .lineText {
   align-self: center;
-  font-size: 1.2rem;
-
+  font-size: 0.8rem;
+  text-align: center;
   color: #c2c2c2;
   span {
     color: #36c1f0b7;
     font-weight: 900;
+  }
+}
+@media (min-width: 1024px) {
+  .titleMobile {
+    display: none;
+  }
+  .lineText {
+    align-self: center;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1023px) {
+  .title,
+  .openTitle {
+    display: none;
+  }
+  .titleMobile {
+    grid-area: tit;
+    text-align: center;
   }
 }
 .containerTitle {
