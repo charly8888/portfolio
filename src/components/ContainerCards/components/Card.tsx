@@ -9,6 +9,8 @@ interface Props {
   github: string
   siteImage: string
   description: string
+  setSelectProject: Function
+  i: number
 }
 
 export const Card: FC<Props> = ({
@@ -17,6 +19,8 @@ export const Card: FC<Props> = ({
   github,
   siteImage,
   description,
+  setSelectProject,
+  i,
 }) => {
   return (
     <div className={css.card}>
@@ -27,7 +31,7 @@ export const Card: FC<Props> = ({
       <section className={css.img}>
         <img src={siteImage} />
       </section>
-      <p className={css.text}>{description}</p>
+      {/* <p className={css.text}>{description}</p> */}
 
       <footer className={css.footer}>
         <a href={github} target="_blank" title="View code">
@@ -36,6 +40,15 @@ export const Card: FC<Props> = ({
         <a href={siteURL} target="_blank" title="Open site">
           <Link className={css.iconSvg} />
         </a>
+        <button
+          className={css.moreInfoButton}
+          onClick={() => {
+            setSelectProject(i)
+            document.body.style.overflow = 'hidden'
+          }}
+        >
+          More info
+        </button>
       </footer>
     </div>
   )

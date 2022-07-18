@@ -1,11 +1,11 @@
 .card {
   width: 18rem;
-  height: 24rem;
+  height: 18rem;
   position: relative;
   background-color: #23272e;
   border-radius: 1.5rem;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
-  margin:  0 1rem ;
+  margin: 0 1rem;
 }
 
 .mark {
@@ -68,5 +68,22 @@
   .iconSvg {
     width: 2rem;
     height: 2rem;
+  }
+}
+
+.moreInfoButton {
+  border: none;
+  background-color: #0093c4;
+  padding: 5px 10px;
+  border-radius: 30px;
+  color: inherit;
+  font-size: 1.1rem;
+  border: 1px solid transparent;
+  margin-bottom: 4px;
+  &:hover {
+    // background-color: aliceblue;
+    background-color: transparent;
+    color: aliceblue;
+    border: 1px solid aliceblue;
   }
 }

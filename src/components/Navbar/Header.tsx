@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import css from './header.module.scss'
 
-export const Header = () => {
+export const Header = ({ setSelectProject }) => {
   const [isOpen, setIsOpen] = useState(false)
   onscroll = () => {
     if (document.documentElement.scrollTop > 0) {
@@ -23,7 +23,11 @@ export const Header = () => {
         className={`${css.header} ${isOpen ? css.headerOpen : ''}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <nav onClick={(e) => e.stopPropagation()}>
+        <nav
+          onClick={(e) => {
+            e.stopPropagation()
+          }}
+        >
           <ul>
             <li>
               <a href="#skills">Skills</a>
@@ -41,8 +45,13 @@ export const Header = () => {
             </li> */}
           </ul>
         </nav>
-      </header>
-      <button onClick={() => setIsOpen(!isOpen)} className={css.ImgMenu}>
+      <button
+        onClick={() => {
+          setIsOpen(!isOpen)
+          setSelectProject(null)
+        }}
+        className={css.ImgMenu}
+        >
         {isOpen ? (
           <svg height="48" width="48" fill="#fff">
             <path d="M12.45 37.65 10.35 35.55 21.9 24 10.35 12.45 12.45 10.35 24 21.9 35.55 10.35 37.65 12.45 26.1 24 37.65 35.55 35.55 37.65 24 26.1Z" />
@@ -54,15 +63,18 @@ export const Header = () => {
         )}
       </button>
 
+        </header>
       {/* mayor a 768px */}
-      <header className={`${css.header768} `} id="header">
+      <header
+        className={`${css.header768} `}
+        id="header"
+        onClick={() => setSelectProject(null)}
+      >
         <div className={css.containerIcoAndLogo}>
           <a href="#">
             <img src="/favicon.ico" id="logo" />
           </a>
-          <section>
-            {/* <h1>Charly8888</h1> */}
-          </section>
+          <section>{/* <h1>Charly8888</h1> */}</section>
         </div>
         <nav className={css.nav}>
           <ul>
