@@ -1,9 +1,14 @@
+import { Dispatch, FC, MouseEvent, SetStateAction } from 'react'
 import { projectsData } from '../ContainerCards/data'
 import Github from '../icons/Github'
 import Link from '../icons/Link'
 import styles from './ModalCard.module.scss'
 
-const ModalCard = ({ setSelectProject, selectProject }) => {
+interface props {
+  setSelectProject: Dispatch<SetStateAction<null>>
+  selectProject: number | null
+}
+const ModalCard: FC<props> = ({ setSelectProject, selectProject }) => {
   const {
     title,
     siteURL,
@@ -12,7 +17,7 @@ const ModalCard = ({ setSelectProject, selectProject }) => {
     description,
     typeOfProject,
     technologies,
-  } = projectsData[selectProject]
+  } = projectsData[selectProject || 0]
 
   const frontBackOrBoth = () => {
     switch (typeOfProject) {
@@ -47,7 +52,7 @@ const ModalCard = ({ setSelectProject, selectProject }) => {
               <li>
                 Tecnologies:<br></br>
                 <section className={styles.conatainerIcons}>
-                  {technologies.map((tech, i) => {
+                  {technologies.map((tech, i: number) => {
                     return (
                       <img
                         src={`icons/${tech}`}
@@ -89,7 +94,10 @@ const ModalCard = ({ setSelectProject, selectProject }) => {
     </div>
   )
 }
-function handleclickCloseButton(e, setSelectProject) {
+function handleclickCloseButton(
+  e: any,
+  setSelectProject: Function
+) {
   e.stopPropagation()
   setSelectProject(null)
   document.body.style.overflow = 'scroll'
