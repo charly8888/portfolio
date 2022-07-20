@@ -1,4 +1,4 @@
-import { Dispatch, FC, MouseEvent, SetStateAction } from 'react'
+import { Dispatch, FC, SetStateAction } from 'react'
 import { projectsData } from '../ContainerCards/data'
 import Github from '../icons/Github'
 import Link from '../icons/Link'
@@ -38,13 +38,10 @@ const ModalCard: FC<props> = ({ setSelectProject, selectProject }) => {
       className={styles.containerModal}
       onClick={(e) => handleclickCloseButton(e, setSelectProject)}
     >
-      <main className={styles.main}>
+      <main className={styles.main} onClick={(e) => e.stopPropagation()}>
         <h1>{title}</h1>
 
-        <div
-          className={styles.containerCard}
-          onClick={(e) => e.stopPropagation()}
-        >
+        <div className={styles.containerCard}>
           <aside className={styles.topOrLeft}>
             <img src={siteImage} className={styles.img} />
             <ul>
@@ -94,10 +91,7 @@ const ModalCard: FC<props> = ({ setSelectProject, selectProject }) => {
     </div>
   )
 }
-function handleclickCloseButton(
-  e: any,
-  setSelectProject: Function
-) {
+function handleclickCloseButton(e: any, setSelectProject: Function) {
   e.stopPropagation()
   setSelectProject(null)
   document.body.style.overflow = 'scroll'

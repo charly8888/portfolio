@@ -2,7 +2,7 @@ import { Dispatch, FC, SetStateAction, useState } from 'react'
 import css from './header.module.scss'
 
 type props = {
-  setSelectProject:Dispatch<SetStateAction<null>>
+  setSelectProject: Dispatch<SetStateAction<null>>
 }
 
 export const Header: FC<props> = ({ setSelectProject }) => {
@@ -71,7 +71,10 @@ export const Header: FC<props> = ({ setSelectProject }) => {
       <header
         className={`${css.header768} `}
         id="header"
-        onClick={() => setSelectProject(null)}
+        onClick={() => {
+          setSelectProject(null)
+          document.body.style.overflow = 'scroll'
+        }}
       >
         <div className={css.containerIcoAndLogo}>
           <a href="#">
