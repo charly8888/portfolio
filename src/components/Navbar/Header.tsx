@@ -1,4 +1,5 @@
 import { Dispatch, FC, SetStateAction, useState } from 'react'
+import useGetScrollTop from '../../hooks/useGetScrollTop'
 import css from './header.module.scss'
 
 type props = {
@@ -7,19 +8,7 @@ type props = {
 
 export const Header: FC<props> = ({ setSelectProject }) => {
   const [isOpen, setIsOpen] = useState(false)
-  onscroll = () => {
-    if (document.documentElement.scrollTop > 0) {
-      document.getElementById('header')?.classList.add(`${css.onScroll}`)
-      document.getElementById('logo')?.classList.add(`${css.onScrollLogo}`)
-      document
-        .getElementById('logo')
-        ?.classList.remove(`${css.onScrollLogoFin}`)
-    } else {
-      document.getElementById('header')?.classList.remove(`${css.onScroll}`)
-      document.getElementById('logo')?.classList.remove(`${css.onScrollLogo}`)
-      document.getElementById('logo')?.classList.add(`${css.onScrollLogoFin}`)
-    }
-  }
+  useGetScrollTop()
 
   return (
     <>

@@ -1,0 +1,17 @@
+.cardContainer {
+  max-width: 25rem;
+  height: auto;
+  // max-width: 20rem;
+  // background-color: greenyellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+    img {
+      width:  100%;
+    }
+  
+  &:hover {
+    transform: scale(1.01);
+  }
+}

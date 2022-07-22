@@ -1,7 +1,7 @@
 import { Dispatch, FC, SetStateAction } from 'react'
 import css from './app.module.scss'
 import { Card } from './components/Card'
-import { projectsData } from './data'
+import { projectsData } from '../../helpers/data'
 
 type props = {
   setSelectProject: Dispatch<SetStateAction<null>>

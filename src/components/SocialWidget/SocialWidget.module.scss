@@ -1,0 +1,25 @@
+.container {
+  padding: 0.6rem;
+  background-color: #d8d8dc;
+  border-radius: 0.6rem 0 0 0.6rem;
+  position: fixed;
+  top: 50%;
+  display: flex;
+  gap: 0.5rem;
+  right: 0;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  transition: all .3s ease-in-out;
+}
+.iconSvg {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.opacity {
+  transform: translate(100% , -50%);
+}

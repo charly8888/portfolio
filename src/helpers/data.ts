@@ -20,9 +20,31 @@ interface project {
   typeOfProject: string
   technologies: Array<tech>
 }
-type data = project[]
 
-export const projectsData: data = [
+interface certification {
+  site: string
+  title: string
+  siteComprobationURL?: string
+  imageURL: string
+}
+
+export const certificationsData: certification[] = [
+  {
+    imageURL: '/images/FCC-ResponsiveWebDesign.png',
+    site: 'https://www.freecodecamp.org',
+    siteComprobationURL:
+      'https://www.freecodecamp.org/certification/charly8888/responsive-web-design',
+    title: 'Responsive web design',
+  },
+  {
+    imageURL: '/images/FCC-JavaScriptAlgorthms.png',
+    site: 'https://www.freecodecamp.org',
+    siteComprobationURL:
+      'https://www.freecodecamp.org/certification/charly8888/javascript-algorithms-and-data-structures',
+    title: 'JavaScript algorithms',
+  },
+]
+export const projectsData: project[] = [
   {
     title: 'Shortcut App',
     siteURL: 'https://shortcuts-app-one.vercel.app/',
@@ -85,8 +107,7 @@ export const projectsData: data = [
     siteURL: 'https://robot-color.netlify.app/',
     github: 'https://github.com/charly8888/robot-colors',
     siteImage: '/images/robot.png',
-    description:
-      `This is my first project, I worked in animations and interactions with the DOM. I'am a bit embarrassed about the code. It's amazing how much I repeat code. But hey, it's my first project and I have a special affection for it.`,
+    description: `This is my first project, I worked in animations and interactions with the DOM. I'am a bit embarrassed about the code. It's amazing how much I repeat code. But hey, it's my first project and I have a special affection for it.`,
     typeOfProject: 'F',
     technologies: ['css.svg', 'html.svg', 'js.svg'],
   },
