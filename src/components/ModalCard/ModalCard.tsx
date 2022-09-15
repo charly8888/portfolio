@@ -1,4 +1,4 @@
-import { Dispatch, FC, SetStateAction, useEffect } from 'react';
+import { Dispatch, FC, SetStateAction } from 'react'
 import { projectsData } from '../../helpers/data'
 import Github from '../icons/Github'
 import Link from '../icons/Link'
@@ -33,7 +33,7 @@ const ModalCard: FC<props> = ({ setSelectProject, selectProject }) => {
         throw new Error('non-existent project type')
     }
   }
-  
+
   return (
     <div
       className={styles.containerModal}
@@ -89,13 +89,12 @@ const ModalCard: FC<props> = ({ setSelectProject, selectProject }) => {
           </button>
         </div>
       </main>
-      
     </div>
   )
 }
 function handleclickCloseButton(e: any, setSelectProject: Function) {
   e.stopPropagation()
   setSelectProject(null)
-  document.body.style.overflow = 'scroll'
+  document.body.style.overflowY = 'scroll'
 }
 export default ModalCard

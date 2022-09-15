@@ -11,7 +11,7 @@
   // align-items: center;
   justify-content: center;
   transform: translateY(-50%);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .iconSvg {
   width: 2.5rem;
@@ -20,6 +20,12 @@
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .iconSvg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
 .opacity {
-  transform: translate(100% , -50%);
+  transform: translate(100%, -50%);
 }
