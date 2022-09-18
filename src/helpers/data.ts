@@ -43,6 +43,13 @@ export const certificationsData: certification[] = [
       'https://www.freecodecamp.org/certification/charly8888/javascript-algorithms-and-data-structures',
     title: 'JavaScript algorithms',
   },
+  {
+    imageURL: '/images/M001_proof_of_completion.jpg',
+    site: 'https://university.mongodb.com/',
+    siteComprobationURL:
+      'https://university.mongodb.com/course_completion/b9764324-36f3-4b8f-b8ec-a80b5f1de95c?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing',
+    title: 'MongoDB Basics',
+  },
 ]
 export const projectsData: project[] = [
   {
