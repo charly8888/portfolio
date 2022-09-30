@@ -30,6 +30,12 @@ interface certification {
 
 export const certificationsData: certification[] = [
   {
+    imageURL: '/images/Alkemy.png',
+    site: 'https://www.alkemy.org',
+    siteComprobationURL: 'https://www.alkemy.org',
+    title: 'React',
+  },
+  {
     imageURL: '/images/FCC-ResponsiveWebDesign.png',
     site: 'https://www.freecodecamp.org',
     siteComprobationURL:
