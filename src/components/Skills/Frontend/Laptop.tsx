@@ -3,14 +3,30 @@ import { getRandomHexadecimalColor } from '../../../helpers/getRandomColors'
 import Play from '../../icons/Play'
 import styles from './Laptop.module.scss'
 import Loader from './Loader'
+const NUMBERS_OF_COLORS_NEEDED = 17
 const Laptop = () => {
   const [sourceGif, setSourceGif] = useState('')
   const [loading, setLoading] = useState(true)
 
+  function generateColors(numberOfColors: number) {
+    const arrOfColors: string[] = []
+
+    for (let index = 0; index < numberOfColors; index++) {
+      arrOfColors.push(getRandomHexadecimalColor())
+    }
+
+    return arrOfColors
+  }
+  const INITIAL_STATE_COLORS = generateColors(NUMBERS_OF_COLORS_NEEDED)
+
+  const [colors, setColors] = useState(INITIAL_STATE_COLORS)
+
   useEffect(() => {
     handlerRequest()
   }, [])
-
+  useEffect(() => {
+    setColors(generateColors(NUMBERS_OF_COLORS_NEEDED))
+  }, [sourceGif])
   async function handlerRequest() {
     setLoading(true)
     try {
@@ -35,7 +51,7 @@ const Laptop = () => {
           {/* SCREEN */}
           <div
             className={styles.firstRectangle}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[0]}` }}
           ></div>
           <div className={styles.firstLines}></div>
           <div className={styles.firstLines}></div>
@@ -51,51 +67,51 @@ const Laptop = () => {
 
           <div
             className={styles.multicolorPoint}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[1]}` }}
           ></div>
           <div
             className={styles.multicolorPoint}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[2]}` }}
           ></div>
           <div
             className={styles.multicolorPoint}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[3]}` }}
           ></div>
           <div
             className={styles.multicolorPoint}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[4]}` }}
           ></div>
           <div
             className={styles.multicolorPoint}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[5]}` }}
           ></div>
           <div
             className={styles.multicolorPoint}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[6]}` }}
           ></div>
           <div
             className={styles.multicolorPoint}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[7]}` }}
           ></div>
           <div
             className={styles.multicolorPoint}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[8]}` }}
           ></div>
           <div
             className={styles.multicolorPoint}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[9]}` }}
           ></div>
           <div
             className={styles.multicolorPoint}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[10]}` }}
           ></div>
           <div
             className={styles.multicolorPoint}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[11]}` }}
           ></div>
           <div
             className={styles.multicolorPoint}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[12]}` }}
           ></div>
 
           <div className={styles.grayLinesFooter}></div>
@@ -113,11 +129,11 @@ const Laptop = () => {
 
           <div
             className={styles.multicolorPointsRight}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[13]}` }}
           ></div>
           <div
             className={styles.multicolorPointsRight}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[14]}` }}
           ></div>
 
           <div className={styles.grayLinesTopRight}></div>
@@ -136,11 +152,11 @@ const Laptop = () => {
 
           <div
             className={styles.middleRightRectangle}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[15]}` }}
           ></div>
           <div
             className={styles.middleRightRectangle}
-            style={{ backgroundColor: `${getRandomHexadecimalColor()}` }}
+            style={{ backgroundColor: `${colors[16]}` }}
           ></div>
 
           <div className={styles.bottomRightLines}></div>
