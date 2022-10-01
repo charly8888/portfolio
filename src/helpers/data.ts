@@ -59,6 +59,24 @@ export const certificationsData: certification[] = [
 ]
 export const projectsData: project[] = [
   {
+    title: 'Nin JS',
+    siteURL: 'https://nin-js.netlify.app',
+    github: 'https://github.com/BrunoMalagoli/NinJS-Vite',
+    siteImage: '/images/NinJS.png',
+    description:
+      'An educational website with Ninja theme where you can test your knowledge in JavaScript with multiple code quizes. It also provides educational content between questions, so you can also learn while answering the questions. I made this project with my Alkemy Team.',
+    typeOfProject: 'FS',
+    technologies: [
+      'css.svg',
+      'html.svg',
+      'js.svg',
+      'jwt.svg',
+      'mongo.svg',
+      'react.svg',
+      'nodejs.svg',
+    ],
+  },
+  {
     title: 'Shortcut App',
     siteURL: 'https://shortcuts-app-one.vercel.app/',
     github: 'https://github.com/charly8888/shortcutsApp',
