@@ -1,5 +1,3 @@
-<h1 >Nin<span style="color:#F8D859;">JS</span></h1>
-
 
 # Welcome, this is my portfolio web
 
