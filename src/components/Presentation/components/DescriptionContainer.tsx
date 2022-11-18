@@ -22,7 +22,11 @@ export const DescriptionContainer = () => {
       <h1 className={css.titleMobile}>Web Developer</h1>
       <div className={css.title}>
         <span className={`${css.genericV} ${css.firstV}`}></span>
-        <div className={`${openTitle ? css.openTitle : css.closeTitle} ${css.containerTitle}`}>
+        <div
+          className={`${openTitle ? css.openTitle : css.closeTitle} ${
+            css.containerTitle
+          }`}
+        >
           <h1>Web Developer</h1>
         </div>
         <div
@@ -31,22 +35,23 @@ export const DescriptionContainer = () => {
         <span className={`${css.genericV} ${css.secondV}`}></span>
       </div>
       <p className={`${css.w} ${css.lineText}`}>
-        <span> " </span> Hi, I am German Hornus, a Software Programmer from 
+        <span> " </span> Hello, my name is German Hornus.
       </p>
       <p className={`${css.e} ${css.lineText}`}>
-      Argentina. I love solving problems and creating software,
+        I am a web developer from Argentina
       </p>
       <p className={`${css.r} ${css.lineText}`}>
-        I also love to keep adding new knowledge to my repertoire
+        who loves to solve problems by creating software,
       </p>
       <p className={`${css.t} ${css.lineText}`}>
-        and improve my profile as a professional.
+        as well as incorporating new knowledge.
       </p>
       <p className={`${css.y} ${css.lineText}`}>
-        My main focus is full-stack development and
+        {' '}
+        My goal is to reach to be a full-stack developer.
       </p>
       <p className={`${css.u} ${css.lineText}`}>
-        this is my personal portfolio.<span> "</span>
+        Welcome to my portfolio, I hope you enjoy it!.<span> "</span>
       </p>
     </>
   )
